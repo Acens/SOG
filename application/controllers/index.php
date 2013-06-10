@@ -12,4 +12,9 @@ class Index extends CI_Controller {
 	{
 		$this->load->view('principal');
 	}
+
+	public function sobre_presidencia()
+	{
+		$this->load->view('sobre_cargos/sobre_presidencia');
+	}
 }

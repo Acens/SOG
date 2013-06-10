@@ -3,11 +3,9 @@
 
 <div class="hero-unit">
   <h1 class="text-center">Bem-vindo ao SOG</h1>
-  <p class="text-center">Escolha a sua Diretoria abaixo ou saiba mais:</p>
+  <p class="text-center">Escolha a sua Diretoria abaixo ou saiba mais sobre o <br />Sistema Online de Gestão (SOG):</p>
   <p class="text-center">
-    <a class="btn btn-primary btn-large">
-      Saiba mais
-    </a>
+	<?php echo anchor('index/sobre_presidencia', 'Saiba mais', 'class="btn btn-primary btn-large"'); ?>      
   </p>
 </div>
 
@@ -16,14 +14,10 @@
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Presidência</h3>
-      <p>Texto</p>
+      <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <a class="btn btn-primary">
-	      Entrar
-	    </a>
-	    <a class="btn">
-	      Sobre o cargo
-	    </a>	    
+	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
 	  </p>
     </div>
   </li>
@@ -32,14 +26,10 @@
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Adm-Financeiro</h3>
-      <p>Thumbnail caption...</p>
+      <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <a class="btn btn-primary">
-	      Entrar
-	    </a>
-	    <a class="btn">
-	      Sobre o cargo
-	    </a>	    
+	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>
@@ -48,14 +38,10 @@
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Gestão de Pessoas</h3>
-      <p>Thumbnail caption...</p>
+      <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <a class="btn btn-primary">
-	      Entrar
-	    </a>
-	    <a class="btn">
-	      Sobre o cargo
-	    </a>	    
+	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>     
 	  </p>
     </div>
   </li>
@@ -64,14 +50,10 @@
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Projetos</h3>
-      <p>Thumbnail caption...</p>
+      <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <a class="btn btn-primary">
-	      Entrar
-	    </a>
-	    <a class="btn">
-	      Sobre o cargo
-	    </a>	    
+	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>
@@ -80,14 +62,10 @@
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Marketing</h3>
-      <p>Thumbnail caption...</p>
+      <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <a class="btn btn-primary">
-	      Entrar
-	    </a>
-	    <a class="btn">
-	      Sobre o cargo
-	    </a>	    
+	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>     
@@ -96,14 +74,10 @@
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Trainees</h3>
-      <p>Thumbnail caption...</p>
+      <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <a class="btn btn-primary">
-	      Entrar
-	    </a>
-	    <a class="btn">
-	      Sobre o cargo
-	    </a>	    
+	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
 	  </p>
     </div>
   </li>         
