@@ -17,4 +17,9 @@ class Index extends CI_Controller {
 	{
 		$this->load->view('sobre_cargos/sobre_presidencia');
 	}
+
+	public function info_gerais()
+	{
+		$this->load->view('info/info_gerais');
+	}
 }

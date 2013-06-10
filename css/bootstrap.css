@@ -3297,6 +3297,14 @@ button.close {
           border-radius: 6px;
 }
 
+.btn-giant {
+  padding: 20px 70px;
+  font-size: 30.5px;
+  -webkit-border-radius: 9px;
+     -moz-border-radius: 9px;
+          border-radius: 9px;
+}
+
 .btn-large [class^="icon-"],
 .btn-large [class*=" icon-"] {
   margin-top: 4px;
@@ -6130,7 +6138,17 @@ a.badge:focus {
           border-radius: 6px;
 }
 
-.hero-unit h1 {
+.hero-unit-acens {
+  background: #0a2e57 url('../img/bkg-pat.png');
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #fff;
+}
+
+.hero-unit h1, .hero-unit-acens h1 {
   margin-bottom: 0;
   font-size: 60px;
   line-height: 1;
@@ -6138,7 +6156,7 @@ a.badge:focus {
   color: inherit;
 }
 
-.hero-unit li {
+.hero-unit li, .hero-unit-acens li {
   line-height: 30px;
 }
 
@@ -6164,4 +6182,10 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+
+.center {
+     float: none !important;
+     margin-left: auto !important;
+     margin-right: auto !important;
 }

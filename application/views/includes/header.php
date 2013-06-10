@@ -15,5 +15,11 @@
   <link href="<?php echo base_url(); ?>/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 
   <link href="<?php echo base_url(); ?>img/ico/favicon.ico" rel="shortcut icon">
+
+  <script type="text/javascript"> 
+    $(document).ready(function () { 
+    $('.dropdown-toggle').dropdown(); 
+    }); 
+  </script>
 </head>
 <body>
