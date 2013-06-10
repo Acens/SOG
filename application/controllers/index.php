@@ -7,12 +7,20 @@ class Index extends CI_Controller {
 		parent::__construct();
 	}
 
-
+	/*Chamada para página Principal*/
 	public function index()
 	{
 		$this->load->view('principal');
 	}
 
+	/*Chamada provisória página Login  http://localhost/SOG/index.php/index/login */
+	public function login()
+	{
+		$this->load->view('login');
+	}
+
+
+	/*Funções de chamadas para páginas SOBRE*/
 	public function sobre_presidencia()
 	{
 		$this->load->view('sobre_cargos/sobre_presidencia');

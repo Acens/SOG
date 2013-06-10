@@ -17,7 +17,7 @@
               <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bem-vindo, <? echo anchor('index', $this->session->userdata('email')); ?> <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                       <li><a href="#"><i class="icon-cog"></i> Perfil</a></li>
-                      <li><a href="#"><i class="icon-envelope"></i> Contato</a></li>
+                      <li><a href="#"><i class="icon-pencil"></i> Registrar atividades</a></li>
                       <li class="divider"></li>
                       <li><a href="#"><i class="icon-off"></i> Logout</a></li>
                   </ul>

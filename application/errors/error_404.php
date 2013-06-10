@@ -1,62 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>404 Page Not Found</title>
-<style type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada - S.O.G. - Acens - Mentes em desenvolvimento</title>
+  <meta name="description" content="Administração interna da Acens">
+  <meta name="author" content="jeovania nicolas alisson">
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Le styles -->
+  <link href="<?php echo base_url(); ?>/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo base_url(); ?>/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 
-::selection{ background-color: #E13300; color: white; }
-::moz-selection{ background-color: #E13300; color: white; }
-::webkit-selection{ background-color: #E13300; color: white; }
+  <link href="<?php echo base_url(); ?>img/ico/favicon.ico" rel="shortcut icon">
 
-body {
-	background-color: #fff;
-	margin: 40px;
-	font: 13px/20px normal Helvetica, Arial, sans-serif;
-	color: #4F5155;
-}
-
-a {
-	color: #003399;
-	background-color: transparent;
-	font-weight: normal;
-}
-
-h1 {
-	color: #444;
-	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
-	font-size: 19px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
-}
-
-code {
-	font-family: Consolas, Monaco, Courier New, Courier, monospace;
-	font-size: 12px;
-	background-color: #f9f9f9;
-	border: 1px solid #D0D0D0;
-	color: #002166;
-	display: block;
-	margin: 14px 0 14px 0;
-	padding: 12px 10px 12px 10px;
-}
-
-#container {
-	margin: 10px;
-	border: 1px solid #D0D0D0;
-	-webkit-box-shadow: 0 0 8px #D0D0D0;
-}
-
-p {
-	margin: 12px 15px 12px 15px;
-}
-</style>
+  <script type="text/javascript"> 
+    $(document).ready(function () { 
+    $('.dropdown-toggle').dropdown(); 
+    }); 
+  </script>
 </head>
 <body>
-	<div id="container">
-		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
-	</div>
+  <div class="hero-unit text-center">
+    <h1>Página não encontrada <small><font face="Tahoma" color="red">Erro 404</font></small></h1>
+    <br />
+    <p>The page you requested could not be found, either contact your webmaster or try again. Use your browsers <b>Back</b> button to navigate to the page you have prevously come from</p>
+    <p><b>Or you could just press this neat little button:</b></p>
+    <a href="<?php echo site_url('index')?>" class="btn btn-large btn-info"><i class="icon-home icon-white"></i> Leve-me a página inicial</a>
+  </div>
 </body>
 </html>

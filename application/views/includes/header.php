@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOG Acens</title>
+  <title>S.O.G. - Acens - Mentes em desenvolvimento</title>
   <meta name="description" content="Administração interna da Acens">
   <meta name="author" content="jeovania nicolas alisson">
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
