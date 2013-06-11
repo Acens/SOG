@@ -18,7 +18,7 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/presidencia_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
 	  </p>
     </div>
@@ -31,7 +31,7 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/financeiro_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
@@ -44,7 +44,7 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/rh_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>     
 	  </p>
     </div>
@@ -57,7 +57,7 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/projetos_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
@@ -70,7 +70,7 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/marketing_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
@@ -83,7 +83,7 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/trainee_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
 	  </p>
     </div>

@@ -69,7 +69,7 @@ empresa em eventos.</p>
 
 <hr />
 
-<table class="table table-striped table-hover table-bordered pull-right">
+<table class="table table-striped table-hover table-bordered">
 	<tr>
 		<th class="span6">Competências <a href=""><i class="icon-question-sign"></i></a></th>
 		<th class="span6">Qualificações <a href=""><i class="icon-question-sign"></i></a></th>

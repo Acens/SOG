@@ -37,5 +37,34 @@ class Index extends CI_Controller {
 		$this->load->view('scrum/projetos_alocados');
 	}
 
+	/*Funções de chamadas para páginas DAS DIRETORIAS*/
+	public function presidencia_principal()
+	{
+		$this->load->view('presidencia/presidencia_principal');
+	}
 
+	public function financeiro_principal()
+	{
+		$this->load->view('financeiro/financeiro_principal');
+	}
+
+	public function rh_principal()
+	{
+		$this->load->view('rh/rh_principal');
+	}
+
+	public function projetos_principal()
+	{
+		$this->load->view('projetos/projetos_principal');
+	}		
+
+	public function marketing_principal()
+	{
+		$this->load->view('marketing/marketing_principal');
+	}
+
+	public function trainee_principal()
+	{
+		$this->load->view('trainee/trainee_principal');
+	}		
 }
