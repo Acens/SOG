@@ -13,7 +13,7 @@
       </ul>
 
       <div class="pull-right">
-          <ul class="nav pull-right">
+          <ul class="nav pull-right li-usuario">
               <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bem-vindo, <? echo anchor('index', $this->session->userdata('email')); ?> <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                       <li><i class="icon-cog"></i><?php echo anchor('#', 'Perfil', 'style="display:inline; padding:3px 5px;"'); ?></li>
