@@ -16,8 +16,9 @@
           <ul class="nav pull-right">
               <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bem-vindo, <? echo anchor('index', $this->session->userdata('email')); ?> <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                      <li><a href="#"><i class="icon-cog"></i> Perfil</a></li>
-                      <li><a href="#"><i class="icon-pencil"></i> Registrar atividades</a></li>
+                      <li><i class="icon-cog"></i><?php echo anchor('#', 'Perfil', 'style="display:inline; padding:3px 5px;"'); ?></li>
+                      <li><i class="icon-pencil"></i><?php echo anchor('#', 'Registrar atividades', 'style="display:inline; padding:3px 5px;"'); ?></li>
+                      <li><i class="icon-briefcase"></i><?php echo anchor('index/projetos_alocados', 'Meus Projetos', 'style="display:inline; padding:3px 5px;"'); ?></li>
                       <li class="divider"></li>
                       <li><a href="#"><i class="icon-off"></i> Logout</a></li>
                   </ul>
