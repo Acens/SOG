@@ -5,7 +5,12 @@
 <div class="hero-unit-acens">
   <h1 class="text-center">Membros</h1>
 </div>
-  
+  <?php 
+    if ($this->session->flashdata('cadastrook')){
+      echo '<p>'.$this->session->flashdata('cadastrook').'</p>';
+    }
+
+   ?>
   <div class="inserir">
     <div class="inserir_top">
         <p class="text-center">Inserir</p>
