@@ -13,6 +13,12 @@ class Index extends CI_Controller {
 		$this->load->view('principal');
 	}
 
+	/*Chamada para página de testes*/
+	public function teste()
+	{
+		$this->load->view('teste');
+	}	
+
 	/*Chamada provisória página Login  http://localhost/SOG/index.php/index/login */
 	public function login()
 	{
