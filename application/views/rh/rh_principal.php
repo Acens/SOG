@@ -13,19 +13,18 @@
       Sidebar para algum menu ou conteúdo. Não planejei nada ainda pra isso...
     </div>
     <div class="span9">
-      <ul class="thumbnails text-center" >
+      <ul class="thumbnails text-center" >          
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 1</h3>
+              <h3>Membros</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
-              <p>Pequena descrição da funcinalidade</p>
+              <p>Pequena descrição do cargo</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>  
+              <?php echo anchor('index/membros', 'Entrar', 'class="btn btn-primary  btn-block"'); ?>   
             </p>
             </div>
-          </li>
-
+          </li>      
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">

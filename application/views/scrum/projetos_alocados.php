@@ -3,7 +3,7 @@
 
 
 <div class="hero-unit-acens">
-  <h1 class="text-center">Projetos</h1>
+  <h1 class="text-center">Meus Projetos</h1>
   <p class="text-center">Esses são os projetos onde você esta alocado</p>
   
 </div>

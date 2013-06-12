@@ -2942,7 +2942,6 @@ table th[class*="span"],
   overflow: hidden;
   background-color: #e5e5e5;
   border-bottom: 1px solid #ffffff;
-  padding: 0;
 }
 
 .dropdown-menu > li > a {
@@ -5254,6 +5253,28 @@ input[type="submit"].btn.btn-mini {
           background-clip: padding-box;
 }
 
+.modal.modal-cadastro {
+  position: fixed;
+  top: 10%;
+  left: 26%;
+  z-index: 1050;
+  width: 90%;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
 .modal.fade {
   top: -25%;
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
@@ -6219,4 +6240,9 @@ a.badge:focus {
   position: fixed;
 }
 
-w
+.inserir_inputs{
+  margin: 5px 10px;
+  float: left;
+  display: inline;
+}
+
