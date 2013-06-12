@@ -5,3 +5,8 @@ Desenvolvido por <strong>Acens</strong>.
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>/js/bootstrap.js"></script>
+<script>  
+$(function ()  
+{ $("#infoCompeten, #infoQualific").popover({trigger: 'hover'});  
+});  
+</script> 

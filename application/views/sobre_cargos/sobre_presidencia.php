@@ -71,8 +71,8 @@ empresa em eventos.</p>
 
 <table class="table table-striped table-hover table-bordered">
 	<tr>
-		<th class="span6">Competências <a href=""><i class="icon-question-sign"></i></a></th>
-		<th class="span6">Qualificações <a href=""><i class="icon-question-sign"></i></a></th>
+		<th class="span6">Competências <a href="#" id="infoCompeten" rel="popover" data-content="Qualidades pessoais desejadas para o cargo." data-original-title="Info: Competências"><i class="icon-question-sign"></i></a></th>
+		<th class="span6">Qualificações <a href="#" id="infoQualific" rel="popover" data-content="Conhecimentos básicos para a gestão." data-original-title="Info: Qualificações"><i class="icon-question-sign"></i></a></th>
 	</tr>
 	<tr>
 		<td>Boa comunicação</td>
