@@ -46,7 +46,7 @@ class Index extends CI_Controller {
 	/*Chamada para as recursos humanos*/
 	public function membros()
 	{
-		$this->load->view('recursos_humanos/membros');
+		$this->load->view('rh/membros');
 	}
 
 public function inserir_membros()
@@ -65,5 +65,34 @@ public function inserir_membros()
 	}
 
 
+	/*Funções de chamadas para páginas DAS DIRETORIAS*/
+	public function presidencia_principal()
+	{
+		$this->load->view('presidencia/presidencia_principal');
+	}
 
+	public function financeiro_principal()
+	{
+		$this->load->view('financeiro/financeiro_principal');
+	}
+
+	public function rh_principal()
+	{
+		$this->load->view('rh/rh_principal');
+	}
+
+	public function projetos_principal()
+	{
+		$this->load->view('projetos/projetos_principal');
+	}		
+
+	public function marketing_principal()
+	{
+		$this->load->view('marketing/marketing_principal');
+	}
+
+	public function trainee_principal()
+	{
+		$this->load->view('trainee/trainee_principal');
+	}		
 }

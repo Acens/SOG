@@ -11,85 +11,85 @@
 
 <div class="container">
 <ul class="thumbnails text-center" >
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Presidência</h3>
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/presidencia_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
 	  </p>
     </div>
   </li>
 
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Adm-Financeiro</h3>
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/financeiro_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>
 
-   <li class="span4">
+   <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Recursos Humanos</h3>
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/recursos_humanos', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/rh_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>     
 	  </p>
     </div>
   </li>
 
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Projetos</h3>
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/projetos_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>
 
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Marketing</h3>
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/marketing_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>     
 
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Trainees</h3>
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/trainee_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
 	  </p>
     </div>
   </li>    
 
-  <li class="span12">
+  <li class="span12 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Informações gerais</h3>

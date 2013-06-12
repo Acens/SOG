@@ -11,7 +11,7 @@
 
 <h2>Tabela de conteúdo</h2>
 
-<table class="table table-striped table-hover">
+<table class="table table-striped table-hover table-bordered">
 	<tr>
 		<th class="span10">Nome</th>
 		<th>Data de modificação</th>

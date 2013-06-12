@@ -5,7 +5,7 @@ class Membros_model extends CI_Model{
 
 	public function insert($dados=NULL){
 		if ($dados!=NULL) {
-			$this->db->insert('membros',$dados)
+			$this->db->insert('membros',$dados);
 		}
 	}
 
