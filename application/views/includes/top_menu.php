@@ -11,7 +11,7 @@
           <a class="brand hidden-phone hidden-tablet" href="<?php echo site_url('index')?>"><img src="<?php echo base_url(); ?>img/acens.png"></a>
           <ul class="nav nav-collapse">
             <li class="divider-vertical"></li>
-            <li id="nav-add"><?php echo anchor('index', 'Adicionar'); ?></li>
+            <li id="nav-add"><a href="#" class="button-inserir">Adicionar</a><!--<?php echo anchor('index', 'Adicionar'); ?>--></li>
             <li class="divider-vertical"></li>
             <li id="nav-delete"><?php echo anchor('index', 'Deletar'); ?></li>
             <li class="divider-vertical"></li>

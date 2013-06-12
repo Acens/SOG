@@ -6,7 +6,6 @@
   <title>S.O.G. - Acens - Mentes em desenvolvimento</title>
   <meta name="description" content="Administração interna da Acens">
   <meta name="author" content="jeovania nicolas alisson">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -17,8 +16,6 @@
   <link href="<?php echo base_url(); ?>/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 
   <link href="<?php echo base_url(); ?>/img/ico/favicon.ico" rel="shortcut icon">
-  
-  <script type="text/javascript" src="<?php echo base_url(); ?>/js/efeitos.js"></script>
 
   <script type="text/javascript"> 
     $(document).ready(function () { 
