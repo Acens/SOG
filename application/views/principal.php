@@ -11,7 +11,7 @@
 
 <div class="container">
 <ul class="thumbnails text-center" >
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Presidência</h3>
@@ -24,7 +24,7 @@
     </div>
   </li>
 
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Adm-Financeiro</h3>
@@ -37,7 +37,7 @@
     </div>
   </li>
 
-   <li class="span4">
+   <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Gestão de Pessoas</h3>
@@ -50,7 +50,7 @@
     </div>
   </li>
 
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Projetos</h3>
@@ -63,7 +63,7 @@
     </div>
   </li>
 
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Marketing</h3>
@@ -76,7 +76,7 @@
     </div>
   </li>     
 
-  <li class="span4">
+  <li class="span4 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Trainees</h3>
@@ -89,7 +89,7 @@
     </div>
   </li>    
 
-  <li class="span12">
+  <li class="span12 thumbnail-hover">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
       <h3>Informações gerais</h3>

@@ -14,7 +14,7 @@
     </div>
     <div class="span9">
       <ul class="thumbnails text-center" >
-          <li class="span3">
+          <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
               <h3>Funcionalidade 1</h3>
@@ -26,7 +26,7 @@
             </div>
           </li>
 
-          <li class="span3">
+          <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
               <h3>Funcionalidade 2</h3>
@@ -38,7 +38,7 @@
             </div>
           </li>
 
-           <li class="span3">
+           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
               <h3>Funcionalidade 3</h3>
@@ -50,7 +50,7 @@
             </div>
           </li>
 
-          <li class="span3">
+          <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
               <h3>Funcionalidade 4</h3>
@@ -62,7 +62,7 @@
             </div>
           </li>
 
-          <li class="span3">
+          <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
               <h3>Funcionalidade 5</h3>
@@ -74,7 +74,7 @@
             </div>
           </li>     
 
-          <li class="span3">
+          <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
               <h3>Funcionalidade 6</h3>
