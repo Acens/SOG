@@ -40,11 +40,11 @@
    <li class="span4">
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="">
-      <h3>Gestão de Pessoas</h3>
+      <h3>Recursos Humanos</h3>
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/recursos_humanos', 'Entrar', 'class="btn btn-primary"'); ?>  
 	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>     
 	  </p>
     </div>

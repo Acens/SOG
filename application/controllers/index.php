@@ -36,6 +36,34 @@ class Index extends CI_Controller {
 	{
 		$this->load->view('scrum/projetos_alocados');
 	}
+	
+	/*Chamada para as diretorias*/
+	public function recursos_humanos()
+	{
+		$this->load->view('diretorias/recursos_humanos');
+	}
+
+	/*Chamada para as recursos humanos*/
+	public function membros()
+	{
+		$this->load->view('recursos_humanos/membros');
+	}
+
+public function inserir_membros()
+	{
+		//$this->load->view('recursos_humanos/membros');
+		
+		$this->form_validation->set_rules('nome','NOME','required');
+
+		if($this->form_validation->run()==TRUE){
+			$dados = elements(array('nome','senha','nascimento','matricula','email_pessoal','email_empresarial','telefone1','telefone2','bairro','rua','numero','cep','ingresso','cargo','skype','github'),$this->input->post());
+			$dados['senha'] = md5($dados['senha']);
+			$this->load->model('membros_model');
+			$this->membros_model->insert($dados);
+		}
+
+	}
+
 
 
 }

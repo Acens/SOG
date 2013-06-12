@@ -241,10 +241,6 @@ a:focus {
   text-decoration: underline;
 }
 
-ul.li-usuario li{
-  padding:2px 11px;
-}
-
 .img-rounded {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
@@ -2946,7 +2942,6 @@ table th[class*="span"],
   overflow: hidden;
   background-color: #e5e5e5;
   border-bottom: 1px solid #ffffff;
-  padding: 0;
 }
 
 .dropdown-menu > li > a {
@@ -6189,4 +6184,43 @@ a.badge:focus {
   position: fixed;
 }
 
-w
+.inserir{ 
+  width:84%; 
+  height:77%; 
+  top:10%; 
+  left:8%; 
+  background-color: white; 
+  position: absolute; 
+  border-radius: 20px; 
+  box-shadow: 0px 0px 20px gray; 
+  overflow: hidden; 
+/*  display: none;*/
+}
+  .inserir_top{ 
+    width: 90%; 
+    height: 11%; 
+    background: #0a2e57 url('../img/bkg-pat.png'); 
+    margin:2% 5%; 
+    border-radius: 10px; 
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 60px;
+    color: #fff;
+  }
+
+.inserir_inputs{
+  margin: 5px 10px;
+  float: left;
+  display: inline;
+}
+
+.inserir_foto{
+  width: 150px;
+  height: 150px;
+  background: url('../img/user_foto.png');
+}
+
+.inserir_content{
+  width: 90%; 
+  margin: 0% 5%;
+}
