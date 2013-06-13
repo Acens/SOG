@@ -3,12 +3,8 @@
 <?php $this->load->view('includes/breadcrumb'); ?>
 
 <div class="hero-unit-acens">
-  <h1>Material promocional</h1>
-  <p>Texto.</p> 
-</div>
-
-<div class="container">
-Carregar os arquivos do dropbox.
+  <h1>Newsletter</h1>
+  <p>Texto</p> 
 </div>
 
 <?php $this->load->view('includes/footer'); ?>

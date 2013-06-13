@@ -21,7 +21,7 @@
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Crie e veja os planos de marketing para promoções e eventos.</p>
             <p class="text-center">
-              <?php echo anchor('#', 'Entrar', 'class="btn btn-primary btn-block"'); ?>  
+              <?php echo anchor('marketing/planos_de_marketing', 'Entrar', 'class="btn btn-primary btn-block"'); ?>  
             </p>
             </div>
           </li>
@@ -33,7 +33,7 @@
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Geração de briefings com envio ao e-mail do cliente e lista de briefings antigsos.</p>
             <p class="text-center">
-              <?php echo anchor('#', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
+              <?php echo anchor('marketing/briefings', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
             </p>
             </div>
           </li>
@@ -53,11 +53,11 @@
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 4</h3>
+              <h3>Newsletter</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
-              <?php echo anchor('#', 'Entrar', 'class="btn btn-primary btn-block"'); ?>    
+              <?php echo anchor('marketing/newsletter', 'Entrar', 'class="btn btn-primary btn-block"'); ?>    
             </p>
             </div>
           </li>
@@ -85,7 +85,6 @@
             </p>
             </div>
           </li>
-
         </ul>
 
     </div>

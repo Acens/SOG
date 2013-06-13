@@ -4,51 +4,29 @@
 <?php $this->load->view('includes/breadcrumb'); ?>
 
 <div class="hero-unit-acens">
-  <h1>Orçamento</h1>
+  <h1>Orçamentos</h1>
   <p>Faça novos orçamentos e veja orçamentos passados.</p>
 </div>
 
-<div class="container">
-<table class="table table-striped table-hover table-bordered">
-  <tr>
-    <th class="span6">Competências <a href="#" id="infoCompeten" rel="popover" data-content="Qualidades pessoais desejadas para o cargo." data-original-title="Info: Competências"><i class="icon-question-sign"></i></a></th>
-    <th class="span6">Qualificações <a href="#" id="infoQualific" rel="popover" data-content="Conhecimentos básicos para a gestão." data-original-title="Info: Qualificações"><i class="icon-question-sign"></i></a></th>
-  </tr>
-  <tr>
-    <td>Boa comunicação</td>
-    <td>Google Docs(principalmente 
-    Document e Spreadsheet)</td>
-  </tr> 
-  <tr>
-    <td>Liderança</td>
-    <td>Skype e Google Hangout</td>
-  </tr>
-
-  <tr>
-    <td>Comprometimento</td>
-    <td>Dropbox</td>
-  </tr>
-
-  <tr>
-    <td>Pensamento Estratégico</td>
-    <td>Trello</td>
-  </tr>
-
-  <tr>
-    <td>Ética</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Profissionalismo</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Organização</td>
-    <td></td>
-  </tr> 
-</table>
+<div id="MyWizard" class="wizard">
+  <ul class="steps">
+    <li data-target="#step1" class="active"><span class="badge badge-info">1</span>Step 1<span class="chevron"></span></li>
+    <li data-target="#step2"><span class="badge">2</span>Step 2<span class="chevron"></span></li>
+    <li data-target="#step3"><span class="badge">3</span>Step 3<span class="chevron"></span></li>
+    <li data-target="#step4"><span class="badge">4</span>Step 4<span class="chevron"></span></li>
+    <li data-target="#step5"><span class="badge">5</span>Step 5<span class="chevron"></span></li>
+  </ul>
+  <div class="actions">
+    <button type="button" class="btn btn-mini btn-prev"> <i class="icon-arrow-left"></i>Prev</button>
+    <button type="button" class="btn btn-mini btn-next" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+  </div>
+</div>
+<div class="step-content">
+  <div class="step-pane active" id="step1">This is step 1</div>
+  <div class="step-pane" id="step2">This is step 2</div>
+  <div class="step-pane" id="step3">This is step 3</div>
+  <div class="step-pane" id="step4">This is step 4</div>
+  <div class="step-pane" id="step5">This is step 5</div>
 </div>
 
 <?php $this->load->view('includes/footer'); ?>

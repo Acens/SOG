@@ -41,11 +41,10 @@
           </td>
         </tr>
         <?php } ?>
-        
-
       </tbody>
     </table>
 </div>
+
 <div class="pagination pagination-centered">
     <ul>
         <li><a href="#">Anterior</a></li>
@@ -56,6 +55,7 @@
         <li><a href="#">Próximo</a></li>
     </ul>
 </div>
+
 <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -343,9 +343,5 @@
      ?> 
   </div>
 </div>  
-
-
-
-
 
 <?php $this->load->view('includes/footer'); ?>
