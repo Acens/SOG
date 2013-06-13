@@ -26,7 +26,7 @@
       </thead>
       <tbody>
         <?php 
-    foreach ($membros as $linha) {
+		foreach ($membros as $linha) {
          ?>
         <tr>
           <td><?php echo $linha->id;?></td>
