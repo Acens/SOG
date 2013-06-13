@@ -3109,7 +3109,7 @@ table th[class*="span"],
 }
 
 .caixa {
-  padding: 10px;
+  padding: 0.5%;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   -webkit-border-radius: 4px;

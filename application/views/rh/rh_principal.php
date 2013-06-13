@@ -21,7 +21,7 @@
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição do cargo</p>
             <p class="text-center">
-              <?php echo anchor('index/membros', 'Entrar', 'class="btn btn-primary  btn-block"'); ?>   
+              <?php echo anchor('rh/membros', 'Entrar', 'class="btn btn-primary  btn-block"'); ?>   
             </p>
             </div>
           </li>      

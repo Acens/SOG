@@ -85,7 +85,7 @@
     echo validation_errors('<div class="alert alert-error">','</div>')
    ?>
     <?php 
-      echo form_open('index/inserir_membros');
+      echo form_open('rh/inserir_membros');
         ?>
       <div class="inserir_inputs">
       <?php 

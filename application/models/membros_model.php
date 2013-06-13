@@ -7,7 +7,7 @@ class Membros_model extends CI_Model{
 		if ($dados!=NULL) {
 			$this->db->insert('membros',$dados);
 			$this->session->set_flashdata('cadastrook','Cadastro efetuado com sucesso');
-			redirect('index/membros');
+			redirect('rh/membros');
 		}
 	}
 
