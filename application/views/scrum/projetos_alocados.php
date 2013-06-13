@@ -1,5 +1,6 @@
 <?php $this->load->view('includes/header'); ?>
 <?php $this->load->view('includes/top_menu'); ?>
+<?php $this->load->view('includes/breadcrumb'); ?>
 
 
 <div class="hero-unit-acens">

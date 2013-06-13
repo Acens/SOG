@@ -124,6 +124,7 @@
       echo '<div class="alert alert-success">'.$this->session->flashdata('cadastrook').'</div>';
     }
 
+    echo validation_errors('<div class="alert alert-error">','</div>')
    ?>
     <?php 
       echo form_open('index/inserir_membros');
@@ -137,37 +138,37 @@
       </div>
       <div class="inserir_inputs">
         <?php 
-        echo form_label('Nome: ');
+        echo form_label('Nome*: ');
         echo form_input(array('name'=>'nome'),'','autofocus');
         ?>
       </div>
       <div class="inserir_inputs">
       <?php 
-        echo form_label('Senha: ');
+        echo form_label('Senha*: ');
         echo form_password(array('name'=>'senha'));
       ?>
       </div>
       <div class="inserir_inputs">
       <?php 
-        echo form_label('Confirme Senha: ');
+        echo form_label('Confirme Senha*: ');
         echo form_password(array('name'=>'confirme_senha'));
       ?>
       </div>
       <div class="inserir_inputs">
       <?php 
-        echo form_label('Data de Nascimento: ');
+        echo form_label('Data de Nascimento*: ');
         echo form_input(array('name'=>'nascimento'));  
       ?>
       </div>
       <div class="inserir_inputs">
       <?php 
-        echo form_label('Matricula da Faculdade: ');
+        echo form_label('Matricula da Faculdade*: ');
         echo form_input(array('name'=>'matricula'));
       ?>
       </div>
       <div class="inserir_inputs">
       <?php 
-        echo form_label('Email pessoal: ');
+        echo form_label('Email pessoal*: ');
         echo form_input(array('name'=>'email_pessoal'));
       ?>
       </div>
@@ -179,7 +180,7 @@
       </div>
       <div class="inserir_inputs">
       <?php 
-        echo form_label('Telefone 1: ');
+        echo form_label('Telefone 1*: ');
         echo form_input(array('name'=>'telefone1'));
       ?>
       </div>
@@ -215,13 +216,13 @@
       </div>
       <div class="inserir_inputs">
       <?php 
-        echo form_label('Ingresso na empresa: ');
+        echo form_label('Ingresso na empresa*: ');
         echo form_input(array('name'=>'ingresso'));
       ?>
       </div>
       <div class="inserir_inputs">
       <?php 
-        echo form_label('Cargo: ');
+        echo form_label('Cargo*: ');
         echo form_input(array('name'=>'cargo'));
       ?>
       </div>
