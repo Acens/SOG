@@ -28,12 +28,12 @@ class Index extends CI_Controller {
 
 
 	/*Funções de chamadas para páginas SOBRE*/
-	public function sobre_presidencia()
+	public function sobre_a_presidencia()
 	{
 		$this->load->view('sobre_cargos/sobre_presidencia');
 	}
 
-	public function info_gerais()
+	public function informacoes_gerais()
 	{
 		$this->load->view('info/info_gerais');
 	}
@@ -92,32 +92,32 @@ class Index extends CI_Controller {
 
 
 	/*Funções de chamadas para páginas DAS DIRETORIAS*/
-	public function presidencia_principal()
+	public function presidencia()
 	{
 		$this->load->view('presidencia/presidencia_principal');
 	}
 
-	public function financeiro_principal()
+	public function financeiro()
 	{
 		$this->load->view('financeiro/financeiro_principal');
 	}
 
-	public function rh_principal()
+	public function rh()
 	{
 		$this->load->view('rh/rh_principal');
 	}
 
-	public function projetos_principal()
+	public function projetos()
 	{
 		$this->load->view('projetos/projetos_principal');
 	}		
 
-	public function marketing_principal()
+	public function marketing()
 	{
 		$this->load->view('marketing/marketing_principal');
 	}
 
-	public function trainee_principal()
+	public function trainee()
 	{
 		$this->load->view('trainee/trainee_principal');
 	}		

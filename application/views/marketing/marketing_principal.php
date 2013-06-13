@@ -21,7 +21,7 @@
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Crie e veja os planos de marketing para promoções e eventos.</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>  
+              <?php echo anchor('index/sobre_a_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>  
             </p>
             </div>
           </li>
@@ -33,7 +33,7 @@
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Geração de briefings com envio ao e-mail do cliente e lista de briefings antigsos.</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
+              <?php echo anchor('index/sobre_a_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
             </p>
             </div>
           </li>
@@ -57,7 +57,7 @@
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>    
+              <?php echo anchor('index/sobre_a_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>    
             </p>
             </div>
           </li>
