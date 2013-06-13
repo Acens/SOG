@@ -247,7 +247,7 @@ $config['wrapper_inline'] = '<li>|</li>';
  *
  * If set to TRUE then the last segment in breadcrumb will not have a link.
  */
-$config['unlink_last_segment'] = FALSE;
+$config['unlink_last_segment'] = TRUE;
 
 /**
  * ---------------------
