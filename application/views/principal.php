@@ -5,7 +5,7 @@
   <h1 class="text-center">Bem-vindo ao SOG</h1>
   <p class="text-center">Escolha a sua Diretoria abaixo ou saiba mais sobre o <br />Sistema Online de Gestão (SOG):</p>
   <p class="text-center">
-	<?php echo anchor('index/sobre_presidencia', 'Saiba mais', 'class="btn btn-giant"'); ?>      
+	<?php echo anchor('index/sobre_a_presidencia', 'Saiba mais', 'class="btn btn-giant"'); ?>      
   </p>
 </div>
 
@@ -18,8 +18,8 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/presidencia_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
-	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
+	    <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
 	  </p>
     </div>
   </li>
@@ -31,8 +31,8 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/financeiro_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
-	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
+	    <?php echo anchor('index/financeiro', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('#', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>
@@ -44,8 +44,8 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/rh_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
-	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>     
+	    <?php echo anchor('index/rh', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('#', 'Sobre o cargo', 'class="btn"'); ?>     
 	  </p>
     </div>
   </li>
@@ -57,8 +57,8 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/projetos_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
-	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
+	    <?php echo anchor('index/projetos', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>
@@ -70,8 +70,8 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/marketing_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
-	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>      
+	    <?php echo anchor('index/marketing', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('#', 'Sobre o cargo', 'class="btn"'); ?>      
 	  </p>
     </div>
   </li>     
@@ -83,8 +83,8 @@
       <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
       <p>Pequena descrição do cargo</p>
 	  <p class="text-center">
-	    <?php echo anchor('index/trainee_principal', 'Entrar', 'class="btn btn-primary"'); ?>  
-	    <?php echo anchor('index/sobre_presidencia', 'Sobre o cargo', 'class="btn"'); ?>    
+	    <?php echo anchor('index/trainee', 'Entrar', 'class="btn btn-primary"'); ?>  
+	    <?php echo anchor('#', 'Sobre o cargo', 'class="btn"'); ?>    
 	  </p>
     </div>
   </li>    
@@ -95,7 +95,7 @@
       <h3>Informações gerais</h3>
       <p>Informações para todas as diretorias</p>
     <p class="text-center">
-      <?php echo anchor('index/info_gerais', 'Entrar', 'class="btn btn-primary btn-large"'); ?>   
+      <?php echo anchor('index/informacoes_gerais', 'Entrar', 'class="btn btn-primary btn-large"'); ?>   
     </p>
     </div>
   </li>   
