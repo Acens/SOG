@@ -6202,6 +6202,7 @@ a.badge:focus {
   font-weight: 200;
   line-height: 30px;
   color: #fff;
+  text-align: center;
 }
 
 .hero-unit h1, .hero-unit-acens h1 {

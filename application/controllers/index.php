@@ -29,7 +29,7 @@ class Index extends CI_Controller {
 	/*Funções de chamadas para páginas SOBRE*/
 	public function sobre_a_presidencia()
 	{
-		$this->load->view('sobre_cargos/sobre_presidencia');
+		$this->load->view('presidencia/sobre_presidencia');
 	}
 
 	public function informacoes_gerais()

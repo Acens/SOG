@@ -7,19 +7,14 @@
   <p>Ações e atividades da Diretoria.</p> 
 </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="span3 caixa">
-      Sidebar para algum menu ou conteúdo. Não planejei nada ainda pra isso...
-    </div>
-    <div class="span9">
+<div class="container">
       <ul class="thumbnails text-center" >
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
               <h3>Planos de Marketing</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
-              <p>Crie e veja os planos de marketing para promoções e eventos.</p>
+              <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
               <?php echo anchor('marketing/planos_de_marketing', 'Entrar', 'class="btn btn-primary btn-block"'); ?>  
             </p>
@@ -31,7 +26,7 @@
               <img data-src="holder.js/300x200" alt="">
               <h3>Briefings</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
-              <p>Geração de briefings com envio ao e-mail do cliente e lista de briefings antigsos.</p>
+              <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
               <?php echo anchor('marketing/briefings', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
             </p>
@@ -79,16 +74,13 @@
               <img data-src="holder.js/300x200" alt="">
               <h3>Funcionalidade 6</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
-              <p>Pequena descrição da funcinalidadeo</p>
+              <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
               <?php echo anchor('#', 'Entrar', 'class="btn btn-primary btn-block"'); ?> 
             </p>
             </div>
           </li>
         </ul>
-
-    </div>
-  </div>
 </div>
 
 <?php $this->load->view('includes/footer'); ?>
