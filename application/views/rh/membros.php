@@ -20,8 +20,8 @@
           <th class="span4">Nome</th>
           <th class="span2">Cargo</th>
           <th class="span2">Data de registro</th>
-          <th class="span2">Status</th>
-          <th class="span1">Opções</th>
+          <th class="span1 text-center">Status</th>
+          <th class="span1 text-center">Opções</th>
         </tr>
       </thead>
       <tbody>
@@ -33,8 +33,8 @@
           <td><?php echo $linha->nome;?></td>
           <td><?php echo $linha->cargo;?></td>
           <td><?php echo $linha->ingresso;?></td>
-          <td><span class="label label-success">Ativo</span></td>
-          <td>
+          <td class="text-center"><span class="label label-success">Ativo</span></td>
+          <td class="text-center">
               <a href="#myModal3?id=<?php echo $linha->id;?>" role="button" data-toggle="modal"><i class="icon-pencil"></i></a>
               <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
               <a href="user.html"><i class="icon-eye-open"></i></a> 

@@ -731,6 +731,9 @@ a.text-success:focus {
 .text-center {
   text-align: center;
 }
+td.text-center, th.text-center{
+  text-align: center !important;  
+}
 
 h1,
 h2,
