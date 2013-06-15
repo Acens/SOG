@@ -60,11 +60,11 @@
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 5</h3>
+              <h3>Manual da Marca</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
-              <?php echo anchor('#', 'Entrar', 'class="btn btn-primary btn-block"'); ?>     
+              <?php echo anchor('marketing/manual_da_marca', 'Entrar', 'class="btn btn-primary btn-block"'); ?>     
             </p>
             </div>
           </li>     
@@ -72,11 +72,11 @@
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 6</h3>
+              <h3>Pesquisas</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
-              <?php echo anchor('#', 'Entrar', 'class="btn btn-primary btn-block"'); ?> 
+              <?php echo anchor('marketing/pesquisas', 'Entrar', 'class="btn btn-primary btn-block"'); ?> 
             </p>
             </div>
           </li>

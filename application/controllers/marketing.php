@@ -31,5 +31,15 @@ class Marketing extends CI_Controller {
 	public function newsletter()
 	{
 		$this->load->view('marketing/newsletter');
-	}			
+	}	
+
+	public function manual_da_marca()
+	{
+		$this->load->view('marketing/manual_marca');
+	}		
+
+	public function pesquisas()
+	{
+		$this->load->view('marketing/pesquisas');
+	}				
 }

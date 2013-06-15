@@ -199,7 +199,7 @@
                 );
 
         echo form_label('Cargo*: ');
-        echo form_dropdown('Cargo*', $opcoes_cargos, 'padrao');
+        echo form_dropdown('cargo', $opcoes_cargos, 'padrao');
       ?>
       </div>
       <div class="inserir_inputs">
