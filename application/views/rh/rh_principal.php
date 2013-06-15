@@ -2,6 +2,7 @@
 <?php $this->load->view('includes/top_menu'); ?>
 <?php $this->load->view('includes/breadcrumb'); ?>
 
+<!-- Cabeçalho da página -->
 <div class="hero-unit-acens">
   <h1>Diretoria de RH</h1>
   <p>Ações e atividades da Diretoria.</p> 

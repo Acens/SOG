@@ -2,16 +2,19 @@
 <?php $this->load->view('includes/top_menu'); ?>
 <?php $this->load->view('includes/breadcrumb'); ?>
 
+<!-- Cabeçalho da página -->
 <div class="hero-unit-acens">
   <h1>Cadastro de usuários</h1>
-  <p>Cadastros e lista de usuáios da Diretoria de RH.</p> 
+  <p>Cadastros e lista de membros da Acens.</p> 
 </div>
 
+<!-- Botão de novo usuário e busca -->
 <div class="container-fluid btn-toolbar">
-    <button href="#myModal2" role="button" data-toggle="modal" class="btn btn-primary">Novo usuário</button>
+    <button href="#myModal2" role="button" data-toggle="modal" class="btn btn-primary">Novo membro</button>
   <div class="input-append pull-right"><input type="text" id="" name="" placeholder="Buscar usuário"><a href=""><span class="add-on"><i class="icon-search"></i></span></a></div>
 </div>
 
+<!-- Tabela de membros -->
 <div class="container-fluid">
     <table class="table table-striped table-hover table-bordered">
       <thead>
@@ -45,6 +48,7 @@
     </table>
 </div>
 
+<!-- paginação -->
 <div class="pagination pagination-centered">
     <ul>
         <li><a href="#">Anterior</a></li>
@@ -56,6 +60,7 @@
     </ul>
 </div>
 
+<!-- chamada a janela modal de cadastro e telas de confirmação -->
 <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -90,9 +95,12 @@
       <div class="inserir_inputs">
       <?php 
         echo form_label('Foto: ');
-        echo form_input(array('class'=>'membro_nome', 'name'=>'foto', 'style'=>'display:none;'),'','autofocus');
       ?>
-        <div><img class="thumbnail" src="<?php echo base_url(); ?>/img/user_foto.png" alt="" width="150" height="150"></div>
+        <div>
+          <a href="#myModal4" role="button" data-toggle="modal">
+            <img class="thumbnail" src="<?php echo base_url(); ?>/img/user_foto.png" alt="" width="150" height="150">
+          </a>
+        </div>
       </div>
       <div class="inserir_inputs">
         <?php 
@@ -180,10 +188,36 @@
       </div>
       <div class="inserir_inputs">
       <?php 
+      $opcoes_cargos = array(
+                  'padrao' => 'Escolha o cargo',
+                  'presidente'  => 'Dir. Presidente',
+                  'dirfinanceiro'    => 'Dir. Adm-Financeiro',
+                  'dirrh'   => 'Dir. de RH',
+                  'dirmarketing' => 'Dir. Marketing',
+                  'dirprojetos' => 'Dir. de Projetos',
+                  'assepresidente'  => 'Assessor Presidente',
+                  'assefinanceiro'    => 'Assessor Adm-Financeiro',
+                  'asserh'   => 'Assessor de RH',
+                  'assemarketing' => 'Assessor de Marketing',
+                  'asseprojetos' => 'Assessor de Projetos',
+                  'trainee' => 'Trainee',
+                );
+
         echo form_label('Cargo*: ');
-        echo form_input(array('name'=>'cargo'));
+        echo form_dropdown('Cargo*', $opcoes_cargos, 'padrao');
       ?>
       </div>
+      <div class="inserir_inputs">
+      <?php 
+      $opcoes_status = array(
+                  'ativo' => 'Ativo',
+                  'inativo'  => 'Inativo',
+                );
+
+        echo form_label('Status*: ');
+        echo form_dropdown('Status*', $opcoes_status, 'ativo');
+      ?>
+      </div>    
       <div class="inserir_inputs">
       <?php 
         echo form_label('Skype: ');
@@ -204,7 +238,7 @@
       echo form_close();
      ?> 
   </div>
-</div>        
+</div> <!-- Fim da janela de cadastro -->        
 
 <!-- JANELA DE UPDATE -->
 
@@ -228,9 +262,12 @@
       <div class="inserir_inputs">
       <?php 
         echo form_label('Foto: ');
-        echo form_input(array('class'=>'membro_nome', 'name'=>'foto', 'style'=>'display:none;'),'','autofocus');
       ?>
-        <div><img class="thumbnail" src="<?php echo base_url(); ?>/img/user_foto.png" alt="" width="150" height="150"></div>
+        <div>
+          <a href="#myModal4" role="button" data-toggle="modal">
+            <img class="thumbnail" src="<?php echo base_url(); ?>/img/user_foto.png" alt="" width="150" height="150">
+          </a>
+        </div>
       </div>
       <div class="inserir_inputs">
         <?php 
@@ -318,10 +355,36 @@
       </div>
       <div class="inserir_inputs">
       <?php 
+      $opcoes_cargos = array(
+                  'padrao' => 'Escolha o cargo',
+                  'presidente'  => 'Dir. Presidente',
+                  'dirfinanceiro'    => 'Dir. Adm-Financeiro',
+                  'dirrh'   => 'Dir. de RH',
+                  'dirmarketing' => 'Dir. Marketing',
+                  'dirprojetos' => 'Dir. de Projetos',
+                  'assepresidente'  => 'Assessor Presidente',
+                  'assefinanceiro'    => 'Assessor Adm-Financeiro',
+                  'asserh'   => 'Assessor de RH',
+                  'assemarketing' => 'Assessor de Marketing',
+                  'asseprojetos' => 'Assessor de Projetos',
+                  'trainee' => 'Trainee',
+                );
+
         echo form_label('Cargo*: ');
-        echo form_input(array('name'=>'cargo'));
+        echo form_dropdown('Cargo*', $opcoes_cargos, 'padrao');
       ?>
       </div>
+      <div class="inserir_inputs">
+      <?php 
+      $opcoes_status = array(
+                  'ativo' => 'Ativo',
+                  'inativo'  => 'Inativo',
+                );
+
+        echo form_label('Status*: ');
+        echo form_dropdown('Status*', $opcoes_status, 'ativo');
+      ?>
+      </div> 
       <div class="inserir_inputs">
       <?php 
         echo form_label('Skype: ');
@@ -342,6 +405,21 @@
       echo form_close();
      ?> 
   </div>
-</div>  
+</div><!-- Fim da JANELA DE UPDATE -->  
 
+<!-- Upload de fotos -->
+<div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Upload de foto</h3>
+  </div>
+  <div class="modal-body">
+    <?php
+    echo form_open('rh/inserir_membros');
+    echo form_upload(array('class'=>'membro_nome', 'name'=>'foto'),'','autofocus');
+    echo form_close();
+    ?>
+  </div>
+</div>
+       
 <?php $this->load->view('includes/footer'); ?>

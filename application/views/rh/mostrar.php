@@ -90,9 +90,12 @@
       <div class="inserir_inputs">
       <?php 
         echo form_label('Foto: ');
-        echo form_input(array('class'=>'membro_nome', 'name'=>'foto', 'style'=>'display:none;'),'','autofocus');
       ?>
-        <div><img class="thumbnail" src="<?php echo base_url(); ?>/img/user_foto.png" alt="" width="150" height="150"></div>
+        <div>
+          <a href="#myModal4" role="button" data-toggle="modal">
+            <img class="thumbnail" src="<?php echo base_url(); ?>/img/user_foto.png" alt="" width="150" height="150">
+          </a>
+        </div>
       </div>
       <div class="inserir_inputs">
         <?php 
@@ -180,10 +183,36 @@
       </div>
       <div class="inserir_inputs">
       <?php 
+      $opcoes_cargos = array(
+                  'padrao' => 'Escolha o cargo',
+                  'presidente'  => 'Dir. Presidente',
+                  'dirfinanceiro'    => 'Dir. Adm-Financeiro',
+                  'dirrh'   => 'Dir. de RH',
+                  'dirmarketing' => 'Dir. Marketing',
+                  'dirprojetos' => 'Dir. de Projetos',
+                  'assepresidente'  => 'Assessor Presidente',
+                  'assefinanceiro'    => 'Assessor Adm-Financeiro',
+                  'asserh'   => 'Assessor de RH',
+                  'assemarketing' => 'Assessor de Marketing',
+                  'asseprojetos' => 'Assessor de Projetos',
+                  'trainee' => 'Trainee',
+                );
+
         echo form_label('Cargo*: ');
-        echo form_input(array('name'=>'cargo'));
+        echo form_dropdown('Cargo*', $opcoes_cargos, 'padrao');
       ?>
       </div>
+      <div class="inserir_inputs">
+      <?php 
+      $opcoes_status = array(
+                  'ativo' => 'Ativo',
+                  'inativo'  => 'Inativo',
+                );
+
+        echo form_label('Status*: ');
+        echo form_dropdown('Status*', $opcoes_status, 'ativo');
+      ?>
+      </div> 
       <div class="inserir_inputs">
       <?php 
         echo form_label('Skype: ');
