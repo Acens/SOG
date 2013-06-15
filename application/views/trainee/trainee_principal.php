@@ -7,12 +7,7 @@
   <p>Ações e atividades.</p> 
 </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="span3 caixa">
-      Sidebar para algum menu ou conteúdo. Não planejei nada ainda pra isso...
-    </div>
-    <div class="span9">
+<div class="container">
       <ul class="thumbnails text-center" >
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
@@ -88,8 +83,6 @@
 
         </ul>
 
-    </div>
-  </div>
 </div>
 
 <?php $this->load->view('includes/footer'); ?>
