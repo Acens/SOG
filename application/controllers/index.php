@@ -5,13 +5,53 @@ class Index extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+        $this->load->model('login_model');
 	}
 
 	/*Chamada para página Principal*/
 	public function index()
 	{
+		$this->load->view('login');
+		/*$this->load->view('principal');*/
+	}
+	
+	public function login(){
+		// VALIDATION RULES
+        $this->form_validation->set_rules('username', 'Username', 'required');
+        $this->form_validation->set_rules('password', 'Password', 'required');
+        $this->form_validation->set_error_delimiters('<p class="error">', '</p>');
+
+
+
+        // MODELO MEMBERSHIP
+        $query = $this->login_model->validate();
+
+       
+            if ($query) { // VERIFICA LOGIN E SENHA
+                $data = array(
+                    'username' => $this->input->post('username'),
+                    'logged' => true
+                );
+                $this->session->set_userdata($data);
+                $this->load->view('principal');
+            } else {
+                redirect($this->index());
+            }
+        
+    
+	}
+
+
+	public function logout(){
+		$this->session->sess_destroy();
+		$this->load->view('login');
+	}
+	public function principal()
+	{
 		$this->load->view('principal');
 	}
+
+
 
 	/*Chamada para página de testes*/
 	public function teste()
@@ -20,11 +60,11 @@ class Index extends CI_Controller {
 	}	
 
 	/*Chamada provisória página Login  http://localhost/SOG/index.php/index/login */
-	public function login()
+	/*public function login()
 	{
 		$this->load->view('login');
 	}
-
+*/
 
 	/*Funções de chamadas para páginas SOBRE*/
 	public function sobre_a_presidencia()

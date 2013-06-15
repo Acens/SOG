@@ -6,6 +6,8 @@ class Rh extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('membros_model');
+		$this->load->model('login_model');
+        $this->login_model->logged();
 	}
 
 	public function index()

@@ -11,7 +11,8 @@
           	<div class="alert alert-error">
                 <a class="close" data-dismiss="alert" href="#">×</a>Usuário ou senha incorretos!
             </div>
-			<form method="POST" action="" accept-charset="UTF-8">
+		<!--
+    	<form method="POST" action="" accept-charset="UTF-8">
 			<input type="text" id="username" class="span4" name="username" placeholder="Usuário">
 			<input type="password" id="password" class="span4" name="password" placeholder="Senha">
             <label class="checkbox">
@@ -19,7 +20,14 @@
             </label>
 			<button type="submit" name="submit" class="btn btn-primary btn-block">Login</button>
 			</form>    
-		</div>
+		--><?php 
+      echo form_open('index/login');
+      echo form_input(array('id'=>'username', 'class'=>'span4', 'name'=>'username', 'placeholder'=>'Usuário'),'','autofocus');
+      echo form_password(array('id'=>'password', 'class'=>'span4', 'name'=>'senha', 'placeholder'=>'Senha'),'','');
+      echo form_submit(array('class'=>'btn btn-primary','name'=>'Login'),'Login');
+      echo form_close();
+      ?>
+    </div>
 	</div>
 </div>
 

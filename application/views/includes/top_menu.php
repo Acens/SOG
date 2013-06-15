@@ -29,7 +29,7 @@
                           <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-pencil"></i> Registrar atividades</a></li>
                           <li><a href="<?php echo site_url('index/projetos_alocados'); ?>"><i class="icon-briefcase"></i> Meus projetos</a></li>
                           <li class="divider"></li>
-                          <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-off"></i> Logout</a></li>
+                          <li><a href="<?php echo site_url('index/logout'); ?>"><i class="icon-off"></i> Logout</a></li>
                       </ul>
                   </li>
               </ul>
@@ -43,7 +43,7 @@
                           <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-pencil"></i> Registrar atividades</a></li>
                           <li><a href="<?php echo site_url('index/projetos_alocados'); ?>"><i class="icon-briefcase"></i> Meus projetos</a></li>
                           <li class="divider"></li>
-                          <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-off"></i> Logout</a></li>
+                          <li><a href="<?php echo site_url('index/logout'); ?>"><i class="icon-off"></i> Logout</a></li>
                       </ul>
                   </li>
               </ul>

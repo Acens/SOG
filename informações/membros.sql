@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `membros` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
-  `nick` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `membros` (
 -- Extraindo dados da tabela `membros`
 --
 
-INSERT INTO `membros` (`id`, `nick`, `nome`, `senha`, `status`, `foto`, `nascimento`, `matricula`, `email_pessoal`, `email_empresarial`, `telefone1`, `telefone2`, `bairro`, `rua`, `numero`, `cep`, `ingresso`, `cargo`, `skype`, `github`) VALUES
+INSERT INTO `membros` (`id`, `username`, `nome`, `senha`, `status`, `foto`, `nascimento`, `matricula`, `email_pessoal`, `email_empresarial`, `telefone1`, `telefone2`, `bairro`, `rua`, `numero`, `cep`, `ingresso`, `cargo`, `skype`, `github`) VALUES
 (1, 'Nicolas', 'Nicolas Costa Cruz', '202cb962ac59075b964b07152d234b70', 'ativo', '', '20/04/1992', 1130378, 'nicolascc.uece@gmail.com', 'nicolas@acens.com.br', '88444083', '99966041', 'Rodolfo Teofilo', 'Ana Neri', 2006, '60430-430', '01/11/2012', 'Assessor de Projetos', 'nicolas.costa.cruz', 'Nicolasccuece'),
 (2, 'Andre', 'Andre Pesati Revoredo', '1577b65054e39fe451f219e2861d3e35', 'ativo', '', '09/02/1991', 1130437, 'pesatirevoredo@gmail.com', 'andre@acens.com.br', '(85) 8793-8912', '', 'Meireles', 'Pereira Valente apto 503', 1401, '60160-250', '10/2011', 'Diretor de Recursos Humanos', 'pesati00', ''),
 (3, 'Jonatas', 'Jonatas Fontele Dourado', '25db98254ca9dc27cc383e953e24abf6', 'ativo', '', '10/06/1992', 1196400, 'jonatasfontele@gmail.com', 'jonatas@acens.com.br', '96135842', '30884287', 'Centro', 'Conselheiro Tristão', 284, '60050-100', '', 'assessor de Marketing', 'jonatasfontele', ''),
