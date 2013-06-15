@@ -8,11 +8,10 @@ class Index extends CI_Controller {
         $this->load->model('login_model');
 	}
 
-	/*Chamada para página Principal*/
+	/*Chamada para página de Login*/
 	public function index()
 	{
 		$this->load->view('login');
-		/*$this->load->view('principal');*/
 	}
 	
 	public function login(){
@@ -21,12 +20,8 @@ class Index extends CI_Controller {
         $this->form_validation->set_rules('password', 'Password', 'required');
         $this->form_validation->set_error_delimiters('<p class="error">', '</p>');
 
-
-
         // MODELO MEMBERSHIP
         $query = $this->login_model->validate();
-
-       
             if ($query['validar']) { // VERIFICA LOGIN E SENHA
                 $data = array(
                     'username' => $this->input->post('username'),
@@ -37,8 +32,6 @@ class Index extends CI_Controller {
             } else {
                 redirect($this->index());
             }
-        
-    
 	}
 
 
@@ -47,25 +40,17 @@ class Index extends CI_Controller {
 //		$this->session->sess_destroy();
 		$this->load->view('login');
 	}
+
 	public function principal()
 	{
 		$this->load->view('principal');
 	}
-
-
 
 	/*Chamada para página de testes*/
 	public function teste()
 	{
 		$this->load->view('teste');
 	}	
-
-	/*Chamada provisória página Login  http://localhost/SOG/index.php/index/login */
-	/*public function login()
-	{
-		$this->load->view('login');
-	}
-*/
 
 	/*Funções de chamadas para páginas SOBRE*/
 	public function sobre_a_presidencia()
@@ -89,8 +74,6 @@ class Index extends CI_Controller {
 	{
 		$this->load->view('diretorias/recursos_humanos');
 	}
-
-	
 
 	/*Funções de chamadas para páginas DAS DIRETORIAS*/
 	public function presidencia()

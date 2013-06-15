@@ -10,12 +10,11 @@
 <!-- Botão de novo briefing e busca -->
 <div class="container-fluid btn-toolbar">
     <button href="#myModal2" role="button" data-toggle="modal" class="btn btn-primary">Criar novo</button>
-  <div class="input-append pull-right"><input type="text" id="" name="" placeholder="Buscar cliente"><a href=""><span class="add-on"><i class="icon-search"></i></span></a></div>
 </div>
 
 <!-- Tabela de briefings -->
 <div class="container-fluid">
-    <table class="table table-striped table-hover table-bordered">
+    <table class="table table-striped table-hover table-bordered table-filter">
       <thead>
         <tr>
           <th class="span3">Cliente</th>
@@ -58,18 +57,6 @@
         <?php /*}*/ ?>
       </tbody>
     </table>
-</div>
-
-<!-- paginação -->
-<div class="pagination pagination-centered">
-    <ul>
-        <li><a href="#">Anterior</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">Próximo</a></li>
-    </ul>
 </div>
 
 <!-- chamada a janela modal de cadastro e telas de confirmação -->

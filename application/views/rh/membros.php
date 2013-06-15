@@ -11,12 +11,11 @@
 <!-- Botão de novo usuário e busca -->
 <div class="container-fluid btn-toolbar">
     <button href="#myModal2" role="button" data-toggle="modal" class="btn btn-primary">Novo membro</button>
-  <div class="input-append pull-right"><input type="text" id="" name="" placeholder="Buscar usuário"><a href=""><span class="add-on"><i class="icon-search"></i></span></a></div>
 </div>
 
 <!-- Tabela de membros -->
 <div class="container-fluid">
-    <table class="table table-striped table-hover table-bordered">
+    <table id="tabela" class="table table-striped table-hover table-bordered table-filter">
       <thead>
         <tr>
           <th class="span1">#</th>
@@ -43,21 +42,25 @@
               <a href="user.html"><i class="icon-eye-open"></i></a> 
           </td>
         </tr>
+
+
+        <tr>
+          <td><?php echo $linha->id;?></td>
+          <td><?php echo $linha->nome;?></td>
+          <td><?php echo $linha->cargo;?></td>
+          <td><?php echo $linha->ingresso;?></td>
+          <td class="text-center"><span class="label label-warning">Desativado</span></td>
+          <td class="text-center">
+              <a href="#myModal3?id=<?php echo $linha->id;?>" role="button" data-toggle="modal"><i class="icon-pencil"></i></a>
+              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+              <a href="user.html"><i class="icon-eye-open"></i></a> 
+          </td>
+        </tr>
+
+
         <?php } ?>
       </tbody>
     </table>
-</div>
-
-<!-- paginação -->
-<div class="pagination pagination-centered">
-    <ul>
-        <li><a href="#">Anterior</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">Próximo</a></li>
-    </ul>
 </div>
 
 <!-- chamada a janela modal de cadastro e telas de confirmação -->
