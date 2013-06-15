@@ -11,18 +11,30 @@ function validate() {
         $query = $this->db->get('membros'); 
 
         if ($query->num_rows == 1) { 
-            return true; // RETORNA VERDADEIRO
+            $dados = array(
+                'validar' => true
+                );
+            return $dados; // RETORNA VERDADEIRO
         }
     }
 
     # VERIFICA SE O USUÁRIO ESTÁ LOGADO
+    
     function logged() {
         $logged = $this->session->userdata('logged');
 
         if (!isset($logged) || $logged != true) {
-            echo 'Voce nao tem permissao para entrar nessa pagina. ';
-            die();
+           $this->load->view('login');
         }
+    }
+
+    function logout(){
+        $this->session->sess_destroy();
+    }
+
+    function restricoes(){
+
+
     }
 
 }

@@ -27,7 +27,7 @@ class Index extends CI_Controller {
         $query = $this->login_model->validate();
 
        
-            if ($query) { // VERIFICA LOGIN E SENHA
+            if ($query['validar']) { // VERIFICA LOGIN E SENHA
                 $data = array(
                     'username' => $this->input->post('username'),
                     'logged' => true
@@ -43,7 +43,8 @@ class Index extends CI_Controller {
 
 
 	public function logout(){
-		$this->session->sess_destroy();
+		$this->login_model->logout();
+//		$this->session->sess_destroy();
 		$this->load->view('login');
 	}
 	public function principal()
