@@ -41,5 +41,10 @@ class Marketing extends CI_Controller {
 	public function pesquisas()
 	{
 		$this->load->view('marketing/pesquisas');
+	}	
+
+	public function logos_e_fontes()
+	{
+		$this->load->view('marketing/logos');
 	}				
 }
