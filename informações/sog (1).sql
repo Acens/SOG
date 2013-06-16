@@ -66,6 +66,33 @@ INSERT INTO `membros` (`id`, `username`, `nome`, `senha`, `status`, `foto`, `nas
 (9, 'tes', 'tes', 'e10adc3949ba59abbe56e057f20f883e', 'ativo', '', '20/04/1992', 1130476, 'nicolascc.suedce@gmail.com', '', '88219784', '', '', '', 0, '', '10/2011', 'Assessor de Financeiro', '', ''),
 (10, 'Eduardo', 'Eduardo Maranhão Braga', '5c152c75d908272374bbf5075bbb93d0', 'ativo', '', '19/09/1990', 1062959, 'eduardomb.uece@gmail.com', '', '99999999', '', '', '', 0, '', '01/11/2012', 'Diretor de Projetos', '', '');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `notificacao`
+--
+
+CREATE TABLE IF NOT EXISTS `notificacao` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `acao` varchar(255) NOT NULL,
+  `aonde` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  `de` varchar(255) NOT NULL,
+  `para` varchar(255) NOT NULL,
+  `data` varchar(255) NOT NULL,
+  `status` int(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Extraindo dados da tabela `notificacao`
+--
+
+INSERT INTO `notificacao` (`id`, `acao`, `aonde`, `link`, `de`, `para`, `data`, `status`) VALUES
+(1, 'modificou o arquivo', 'Projetos', '', 'Nicolas', 'Andre/Alisson', '16/06/2013//14:30', 0),
+(2, 'comentou sobre o cartão', 'S.O.G.', '', 'Andre', 'Davi/Nicolas', '16/06/2013//14:34', 0),
+(3, 'deu checkin no card', 'ESALQ', '', 'Nicolas', 'Eduardo/Hallisson', '16/06/2013//14:36', 0);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

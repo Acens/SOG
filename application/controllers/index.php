@@ -5,16 +5,34 @@ class Index extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('notificacao_model');
         $this->load->model('login_model');
+
+        
 	}
 
 	/*Chamada para página de Login*/
 	public function index()
 	{
-		$this->load->view('login');
+		$notificacao = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+
+		$logged = $this->session->userdata('logged');
+        if($logged == true){
+            $this->load->view('principal',$notificacao);
+        }
+		else{
+			$this->load->view('login');
+		}
+		
 	}
 	
 	public function login(){
+		$notificacao = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+
 		// VALIDATION RULES
         $this->form_validation->set_rules('username', 'Username', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required');
@@ -28,7 +46,7 @@ class Index extends CI_Controller {
                     'logged' => true
                 );
                 $this->session->set_userdata($data);
-                $this->load->view('principal');
+                $this->load->view('principal',$notificacao);
             } else {
                 redirect($this->index());
             }
@@ -43,7 +61,10 @@ class Index extends CI_Controller {
 
 	public function principal()
 	{
-		$this->load->view('principal');
+		$notificacao = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('principal',$notificacao);
 	}
 
 	/*Chamada para página de testes*/
