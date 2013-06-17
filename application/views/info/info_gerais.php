@@ -13,14 +13,20 @@
 	<h2>Tabela de conteúdo</h2>
 
 	<table class="table table-striped table-hover table-bordered table-filter">
-		<tr>
-			<th class="span10">Nome</th>
-			<th>Data de modificação</th>
-		</tr>
-		<tr>
-			<td>Nome</td>
-			<td>Data de modificação</td>
-		</tr>
+		<thead>	
+			<tr>
+				<th class="span10">Nome</th>
+				<th>Data de modificação</th>
+			</tr>
+		</thead>	
+			<tr>
+				<td>Senhas</td>
+				<td>Data de modificação</td>
+			</tr>
+			<tr>
+				<td>Senhas</td>
+				<td>Data de modificação</td>
+			</tr>
 	</table>
 </div>
 
