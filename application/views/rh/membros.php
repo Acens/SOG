@@ -126,7 +126,7 @@
       <div class="inserir_inputs">
       <?php 
         echo form_label('Data de Nascimento*: ');
-        echo form_input(array('name'=>'nascimento'));  
+        echo form_input(array('class'=>'date', 'name'=>'nascimento'));  
       ?>
       </div>
       <div class="inserir_inputs">
@@ -150,13 +150,13 @@
       <div class="inserir_inputs">
       <?php 
         echo form_label('Telefone 1*: ');
-        echo form_input(array('name'=>'telefone1'));
+        echo form_input(array('class'=>'phone', 'name'=>'telefone1'));
       ?>
       </div>
       <div class="inserir_inputs">
       <?php 
         echo form_label('Telefone 2: ');
-        echo form_input(array('name'=>'telefone2'));
+        echo form_input(array('class'=>'phone', 'name'=>'telefone2'));
       ?>
       </div>
       <div class="inserir_inputs">
@@ -180,13 +180,13 @@
       <div class="inserir_inputs">
       <?php 
         echo form_label('CEP: ');
-        echo form_input(array('name'=>'cep'));
+        echo form_input(array('class'=>'cep', 'name'=>'cep'));
       ?>
       </div>
       <div class="inserir_inputs">
       <?php 
         echo form_label('Ingresso na empresa*: ');
-        echo form_input(array('name'=>'ingresso'));
+        echo form_input(array('class'=>'date', 'name'=>'ingresso'));
       ?>
       </div>
       <div class="inserir_inputs">
@@ -426,3 +426,4 @@
 </div>
        
 <?php $this->load->view('includes/footer'); ?>
+<?php $this->load->view('includes/scripts_formularios'); ?>

@@ -80,6 +80,30 @@
             </p>
             </div>
           </li>
+
+          <li class="span3 thumbnail-hover">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x200" alt="">
+              <h3>Logos e Fontes</h3>
+              <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
+              <p>Pequena descrição da funcinalidade</p>
+            <p class="text-center">
+              <?php echo anchor('upload', 'Entrar', 'class="btn btn-primary btn-block"'); ?>     
+            </p>
+            </div>
+          </li>     
+
+          <li class="span3 thumbnail-hover">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x200" alt="">
+              <h3>Funcionalidade Extra</h3>
+              <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
+              <p>Pequena descrição da funcinalidade</p>
+            <p class="text-center">
+              <?php echo anchor('marketing/pesquisas', 'Entrar', 'class="btn btn-primary btn-block"'); ?> 
+            </p>
+            </div>
+          </li>          
         </ul>
 </div>
 
