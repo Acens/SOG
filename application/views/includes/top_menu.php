@@ -8,7 +8,7 @@
        <span class="icon-bar"></span>
       </a>
       <div class="nav-collapse collapse">
-          <a class="brand hidden-phone hidden-tablet" href="<?php echo site_url('index/principal')?>"><img src="<?php echo base_url(); ?>img/acens.png"></a>
+          <a class="brand hidden-phone hidden-tablet" href="<?php echo site_url('index/principal')?>"><img src="<?php echo base_url(); ?>img/acens-icon.png"></a>
           <ul class="nav nav-collapse">
             <li class="divider-vertical"></li>
             <li id="nav-add"><a href="#" class="button-inserir">Adicionar</a><!--<?php echo anchor('index', 'Adicionar'); ?>--></li>
