@@ -84,6 +84,6 @@
 
         </ul>
 
-</div>
+</div><!-- /.container-->
 
 <?php $this->load->view('includes/footer'); ?>
