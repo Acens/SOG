@@ -6276,3 +6276,5 @@ a.badge:focus {
   display: inline;
 }
 
+.li_notificacoes > a{display:inline !important; padding: 0px !important; color:blue !important;}
+.li_notificacoes > a:hover{color:white !important;}
