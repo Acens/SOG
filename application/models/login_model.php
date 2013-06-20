@@ -24,7 +24,7 @@ function validate() {
         $logged = $this->session->userdata('logged');
 
         if (!isset($logged) || $logged != true) {
-           $this->load->view('login');
+           redirect('index');
         }
     }
 

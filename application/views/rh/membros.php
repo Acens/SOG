@@ -218,7 +218,7 @@
                 );
 
         echo form_label('Status*: ');
-        echo form_dropdown('Status*', $opcoes_status, 'ativo');
+        echo form_dropdown('status', $opcoes_status, 'ativo');
       ?>
       </div>    
       <div class="inserir_inputs">

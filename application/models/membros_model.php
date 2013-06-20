@@ -15,6 +15,23 @@ class Membros_model extends CI_Model{
 		return $this->db->get('membros');
 
 	}
-
-
+/*
+	public function procurar_membro($username){
+		$this->db->where('username', $username);
+        $dados = $this->db->select('id'); 
+        $query = $this->db->get('membros'); 
+        if ($query->num_rows == 1) { 
+            return $dados; // RETORNA VERDADEIRO
+        }
+	}
+*/
+	public function procurar_membro($username){
+		$this->db->where('username', $username);
+		$dados = $this->db->select('id');
+        $query = $this->db->get('membros'); 
+        if ($query->num_rows == 1) { 
+            return  $query->result_array(); // RETORNA VERDADEIRO
+        	//echo '<pre>'; 
+        }
+	}
 }

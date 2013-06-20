@@ -83,12 +83,6 @@ class Index extends CI_Controller {
 	{
 		$this->load->view('info/info_gerais');
 	}
-
-	/*Chamada para o scrum*/
-	public function projetos_alocados()
-	{
-		$this->load->view('scrum/projetos_alocados');
-	}
 	
 	/*Chamada para as diretorias*/
 	public function recursos_humanos()

@@ -27,8 +27,8 @@
                       <ul class="dropdown-menu">
                           <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-cog"></i> Perfil</a></li>
                           <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-pencil"></i> Registrar atividades</a></li>
-                          <li><a href="<?php echo site_url('index/projetos_alocados'); ?>"><i class="icon-briefcase"></i> Meus projetos</a></li>
-                          <li><a href="<?php echo site_url('index/projetos_alocados'); ?>"><i class="icon-list-alt"></i> Minhas tarefas</a></li>
+                          <li><a href="<?php echo site_url('scrum'); ?>"><i class="icon-briefcase"></i> Meus projetos</a></li>
+                          <li><a href="<?php echo site_url('scrum/quadro'); ?>"><i class="icon-list-alt"></i> Minhas tarefas</a></li>
                           <li class="divider"></li>
                           <li><a href="<?php echo site_url('index/logout'); ?>"><i class="icon-off"></i> Logout</a></li>
                       </ul>
@@ -42,8 +42,8 @@
                       <ul class="dropdown-menu">
                           <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-cog"></i> Perfil</a></li>
                           <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-pencil"></i> Registrar atividades</a></li>
-                          <li><a href="<?php echo site_url('index/projetos_alocados'); ?>"><i class="icon-briefcase"></i> Meus projetos</a></li>
-                          <li><a href="<?php echo site_url('index/projetos_alocados'); ?>"><i class="icon-list-alt"></i> Minhas tarefas</a></li>
+                          <li><a href="<?php echo site_url('scrum'); ?>"><i class="icon-briefcase"></i> Meus projetos</a></li>
+                          <li><a href="<?php echo site_url('scrum/quadro'); ?>"><i class="icon-list-alt"></i> Minhas tarefas</a></li>
                           <li class="divider"></li>
                           <li><a href="<?php echo site_url('index/logout'); ?>"><i class="icon-off"></i> Logout</a></li>
                       </ul>
@@ -57,7 +57,7 @@
                       <ul class="dropdown-menu">
                         <?php 
                         foreach ($notificacao as $linha_notificacao) {
-                          ?>
+                          ?>  
                           <li class="li_notificacoes" style="padding:0 5px 10px;"><a href="#"><?php echo $linha_notificacao->de?></a><?php  echo ' '. $linha_notificacao->acao .' ';?><a href="#"><?php echo $linha_notificacao->aonde; ?></a></li>
                         <?php } ?>
                       </ul>
