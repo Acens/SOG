@@ -23,7 +23,7 @@
 
           <div class="pull-right hidden-phone hidden-tablet">
               <ul class="nav pull-right">
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> <?php echo $this->session->userdata('username');; ?> <!-- <? echo anchor('index', $this->session->userdata('email') ); ?> --><b class="caret"></b></a>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> <?php echo $this->session->userdata('username'); ?> <!-- <? echo anchor('index', $this->session->userdata('email') ); ?> --><b class="caret"></b></a>
                       <ul class="dropdown-menu">
                           <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-cog"></i> Perfil</a></li>
                           <li><a href="<?php echo site_url('index/sobre_presidencia'); ?>"><i class="icon-pencil"></i> Registrar atividades</a></li>

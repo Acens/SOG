@@ -6,6 +6,8 @@ class Scrum extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('notificacao_model');
+		$this->load->model('projetos_model');
+		$this->load->model('membproj_model');
 		$this->load->model('login_model');
         $this->login_model->logged();
 	}
@@ -14,10 +16,12 @@ class Scrum extends CI_Controller {
 	/*Chamada para o scrum*/
 	public function index()
 	{
-		$notificacao = array(
+		$dados = array(
 			'notificacao' => $this->notificacao_model->get_all()->result(),
+			'projetos' => $this->projetos_model->get_all()->result(),
+			'meus_projetos' => $this->membproj_model->procurar_meus_projetos(),
 			);
-		$this->load->view('scrum/projetos_alocados',$notificacao);
+		$this->load->view('scrum/projetos_alocados',$dados);
 	}
 
 

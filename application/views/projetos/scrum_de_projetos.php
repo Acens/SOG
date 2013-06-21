@@ -46,14 +46,14 @@
            ?>
           
           <?php if($percentual<100){ ?>
-          <td class="progress progress-striped"><div class="bar" style="width:<?php echo $percentual;?>%; border-radius:15px;"></div></td>
+          <td class="progress progress-striped"><div class="bar" style="width:<?php echo $percentual;?>%; border-radius:10px;"></div></td>
           <?php } elseif($percentual==100){ ?>
-          <td class="progress progress-striped progress-warning"><div class="bar" style="width:100%; border-radius:15px;"></div></td>
+          <td class="progress progress-striped progress-warning"><div class="bar" style="width:100%; border-radius:10px;"></div></td>
           <?php }else{ ?>
-          <td class="progress progress-danger progress-striped" ><div class="bar" style="width: 100%; border-radius:15px;"></div></td>
+          <td class="progress progress-danger progress-striped" ><div class="bar" style="width: 100%; border-radius:10px;"></div></td>
           <?php } ?>
           <td class="text-center">
-            <div class="btn btn-info">Sprints</div>
+              <a href="#myModal4" role="button" data-toggle="modal" class="btn btn-info">Sprints</a>
           </td>
           <td class="text-center">
               <a href="#myModal3" role="button" data-toggle="modal"><i class="icon-pencil"></i></a>
@@ -80,7 +80,57 @@
         <button class="btn btn-danger" data-dismiss="modal">Deletar</button>
     </div>
 </div>
- 
+
+<!--Janela dos Sprints-->
+<div id="myModal4" class="modal modal-cadastro hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header ">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Sprints</h3>
+  </div>
+  <div class="modal-body">
+    <ul class="thumbnails text-center" >
+      <li class="span4 thumbnail-hover">
+        <div class="thumbnail">
+          <img data-src="holder.js/300x200" alt="">
+          <h3>Sprint 1</h3>
+         <p>Pequena descrição do sprint</p>
+        <p class="text-center">
+          <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
+          <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
+        </p>
+        </div>
+      </li>
+      
+      <li class="span4 thumbnail-hover">
+        <div class="thumbnail">
+          <img data-src="holder.js/300x200" alt="">
+          <h3>Sprint 2</h3>
+           <p>Pequena descrição do sprint</p>
+        <p class="text-center">
+         <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
+          <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
+        </p>
+        </div>
+      </li>
+      
+      <li class="span4 thumbnail-hover">
+        <div class="thumbnail">
+          <img data-src="holder.js/300x200" alt="">
+          <h3>Sprint 3</h3>
+          <p>Pequena descrição do sprint</p>
+        <p class="text-center">
+          <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
+          <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
+        </p>
+        </div>
+      </li>
+
+
+
+  </div> 
+</div>
+
+
 <!-- janela de novo plano -->
 <div id="myModal2" class="modal modal-cadastro hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">

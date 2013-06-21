@@ -43,7 +43,8 @@ class Index extends CI_Controller {
             if ($query['validar']) { // VERIFICA LOGIN E SENHA
                 $data = array(
                     'username' => $this->input->post('username'),
-                    'logged' => true
+                    'logged' => true,
+                    'id_usuario' => $query['id_usuario'],
                 );
                 $this->session->set_userdata($data);
                 $this->load->view('principal',$notificacao);

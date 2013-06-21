@@ -7,12 +7,14 @@ function validate() {
         $this->db->where('username', $this->input->post('username')); 
         $this->db->where('senha', md5($this->input->post('senha')));
         $this->db->where('status', 'ativo'); // Verifica o status do usuário
-
+        $dados = $this->db->select('id');
         $query = $this->db->get('membros'); 
 
         if ($query->num_rows == 1) { 
+            $id_usuario = $query->result_array();//pega o id do usuario logado
             $dados = array(
-                'validar' => true
+                'validar' => true,
+                'id_usuario' => $id_usuario[0]['id'], 
                 );
             return $dados; // RETORNA VERDADEIRO
         }
