@@ -43,7 +43,8 @@ class Index extends CI_Controller {
             if ($query['validar']) { // VERIFICA LOGIN E SENHA
                 $data = array(
                     'username' => $this->input->post('username'),
-                    'logged' => true
+                    'logged' => true,
+                    'id_usuario' => $query['id_usuario'],
                 );
                 $this->session->set_userdata($data);
                 $this->load->view('principal',$notificacao);
@@ -82,12 +83,6 @@ class Index extends CI_Controller {
 	public function informacoes_gerais()
 	{
 		$this->load->view('info/info_gerais');
-	}
-
-	/*Chamada para o scrum*/
-	public function projetos_alocados()
-	{
-		$this->load->view('scrum/projetos_alocados');
 	}
 	
 	/*Chamada para as diretorias*/

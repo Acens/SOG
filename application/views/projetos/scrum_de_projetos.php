@@ -5,9 +5,8 @@
 
 
 <div class="hero-unit-acens">
-  <h1>Meus Projetos</h1>
-  <p>Todos os projetos onde fiz parte do desenvolvimento</p>
-  <?php //echo $this->session->userdata('username'); ?>
+  <h1>Projetos</h1>
+  <p>Todos os projetos realizados ou em andamento.</p> 
 </div>
 
 <!-- Botão de novo plano -->
@@ -20,8 +19,7 @@
     <table class="table table-striped table-hover table-bordered table-filter">
       <thead>
         <tr>
-          <th class="span2 text-center">Nome do plano</th>
-          <th class="span1 text-center">Cargo</th>
+          <th class="span3 text-center">Nome do plano</th>
           <th class="span1 text-center">Início</th>
           <th class="span1 text-center">Fim</th>
           <th class="span4 text-center">Progresso</th>
@@ -31,47 +29,39 @@
       </thead>
       <tbody>
         <?php 
-        $cont=0;
-      foreach ($projetos as $linha) {
-        if($linha->id==$meus_projetos[$cont]['mp_chave_pro']){
-          
+    foreach ($projetos as $linha) {
          ?>
-          <tr>
-            <td class="text-center"><?php echo $linha->pro_nome;?></td>
-            <td class="text-center"><?php echo$meus_projetos[$cont]['mp_cargo'];?></td>
-            <td class="text-center"><?php echo $linha->pro_inicio;?></td>
-            <td class="text-center"><?php echo $linha->pro_prazo;?></td>
-            <?php 
-            $data_inicio = explode("/", $linha->pro_inicio);
-            $data_final = explode("/", $linha->pro_prazo);
-            $tempo_total = (($data_final[2]-$data_inicio[2])*365)+(($data_final[1]-$data_inicio[1])*30)+($data_final[0]+$data_inicio[0]);
-            $data_hj=date("d/m/Y");
-            $data_atual = explode("/", $data_hj);
-            $tempo_hj = (($data_atual[2]-$data_inicio[2])*365)+(($data_atual[1]-$data_inicio[1])*30)+($data_atual[0]+$data_inicio[0]);
-            $percentual = (($tempo_hj*100)/$tempo_total);
-             ?>
-            
-            <?php if($percentual<100){ ?>
-            <td class="progress progress-striped"><div class="bar" style="width:<?php echo $percentual;?>%; border-radius:10px;"></div></td>
-            <?php } elseif($percentual==100){ ?>
-            <td class="progress progress-striped progress-warning"><div class="bar" style="width:100%; border-radius:10px;"></div></td>
-            <?php }else{ ?>
-            <td class="progress progress-danger progress-striped" ><div class="bar" style="width: 100%; border-radius:10px;"></div></td>
-            <?php } ?>
-            <td class="text-center">
-                <a href="#myModal4" role="button" data-toggle="modal" class="btn btn-info">Sprints</a>
-            </td>
-            <td class="text-center">
-                <a href="#myModal3" role="button" data-toggle="modal"><i class="icon-pencil"></i></a>
-                <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                <a href="user.html"><i class="icon-eye-open"></i></a> 
-            </td>
-          </tr>
-      <?php
-      $cont++;
-        }
-      } 
-       ?>
+        <tr>
+          <td><?php echo $linha->pro_nome;?></td>
+          <td class="text-center"><?php echo $linha->pro_inicio;?></td>
+          <td class="text-center"><?php echo $linha->pro_prazo;?></td>
+          <?php 
+          $data_inicio = explode("/", $linha->pro_inicio);
+          $data_final = explode("/", $linha->pro_prazo);
+          $tempo_total = (($data_final[2]-$data_inicio[2])*365)+(($data_final[1]-$data_inicio[1])*30)+($data_final[0]+$data_inicio[0]);
+          $data_hj=date("d/m/Y");
+          $data_atual = explode("/", $data_hj);
+          $tempo_hj = (($data_atual[2]-$data_inicio[2])*365)+(($data_atual[1]-$data_inicio[1])*30)+($data_atual[0]+$data_inicio[0]);
+          $percentual = (($tempo_hj*100)/$tempo_total);
+           ?>
+          
+          <?php if($percentual<100){ ?>
+          <td class="progress progress-striped"><div class="bar" style="width:<?php echo $percentual;?>%; border-radius:10px;"></div></td>
+          <?php } elseif($percentual==100){ ?>
+          <td class="progress progress-striped progress-warning"><div class="bar" style="width:100%; border-radius:10px;"></div></td>
+          <?php }else{ ?>
+          <td class="progress progress-danger progress-striped" ><div class="bar" style="width: 100%; border-radius:10px;"></div></td>
+          <?php } ?>
+          <td class="text-center">
+              <a href="#myModal4" role="button" data-toggle="modal" class="btn btn-info">Sprints</a>
+          </td>
+          <td class="text-center">
+              <a href="#myModal3" role="button" data-toggle="modal"><i class="icon-pencil"></i></a>
+              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+              <a href="user.html"><i class="icon-eye-open"></i></a> 
+          </td>
+        </tr>
+        <?php } ?>
       </tbody>
     </table>
 </div>
@@ -102,7 +92,7 @@
       <li class="span4 thumbnail-hover">
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="">
-          <h3>Sprint</h3>
+          <h3>Sprint 1</h3>
          <p>Pequena descrição do sprint</p>
         <p class="text-center">
           <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
@@ -114,7 +104,7 @@
       <li class="span4 thumbnail-hover">
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="">
-          <h3>Sprint</h3>
+          <h3>Sprint 2</h3>
            <p>Pequena descrição do sprint</p>
         <p class="text-center">
          <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
@@ -126,7 +116,7 @@
       <li class="span4 thumbnail-hover">
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="">
-          <h3>Sprint</h3>
+          <h3>Sprint 3</h3>
           <p>Pequena descrição do sprint</p>
         <p class="text-center">
           <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  

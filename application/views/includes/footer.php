@@ -5,16 +5,20 @@
 </footer>
 
 <!-- import dos javascripts -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>/js/bootstrap.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.dataTables.js"></script>
 
 <script type="text/javascript">
+     cont=0;
 	$(document).ready(function(){
 	    $('.table-filter').dataTable(
 	    	
 	    );
 	});
+
+
+
 
 	 $(".mostrar_sprint").toggle(
             function () {
