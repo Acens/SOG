@@ -30,6 +30,34 @@ class Rh extends CI_Controller {
 		$this->load->view('rh/membros',$dados);
 	}
 
+	public function atividades(){
+		$this->load->view('rh/atividades');
+	}
+
+	public function documentos(){
+		$this->load->view('rh/documentos');
+	}
+
+	public function processo_seletivo(){
+		$this->load->view('rh/processo_seletivo');
+	}
+
+	public function termo_de_volutariado(){
+		$this->load->view('rh/termo');
+	}
+
+	public function treinamentos(){
+		$this->load->view('rh/treinamentos');
+	}
+
+	public function programa_trainee(){
+		$this->load->view('rh/programa_trainee');
+	}
+
+	public function desligamento(){
+		$this->load->view('rh/desligamento');
+	}
+
 	public function inserir_membros()
 	{
 		

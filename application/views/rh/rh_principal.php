@@ -24,11 +24,23 @@
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 2</h3>
+              <h3>Documentos</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
+              <?php echo anchor('rh/documentos', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
+            </p>
+            </div>
+          </li>
+
+          <li class="span3 thumbnail-hover">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x200" alt="">
+              <h3>Atividades do RH</h3>
+              <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
+              <p>Pequena descrição da funcinalidade</p>
+            <p class="text-center">
+              <?php echo anchor('rh/atividades', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
             </p>
             </div>
           </li>
@@ -36,11 +48,11 @@
            <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 3</h3>
+              <h3>Processo Seletivo</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>     
+              <?php echo anchor('rh/processo_seletivo', 'Entrar', 'class="btn btn-primary btn-block"'); ?>     
             </p>
             </div>
           </li>
@@ -48,11 +60,11 @@
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 4</h3>
+              <h3>Termo de Voluntariado</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>    
+              <?php echo anchor('rh/termo_de_volutariado', 'Entrar', 'class="btn btn-primary btn-block"'); ?>    
             </p>
             </div>
           </li>
@@ -60,11 +72,23 @@
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 5</h3>
+              <h3>Treinamentos</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidade</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?>     
+              <?php echo anchor('rh/treinamentos', 'Entrar', 'class="btn btn-primary btn-block"'); ?>      
+            </p>
+            </div>
+          </li>
+
+          <li class="span3 thumbnail-hover">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x200" alt="">
+              <h3>Programa Trainee</h3>
+              <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
+              <p>Pequena descrição da funcinalidade</p>
+            <p class="text-center">
+              <?php echo anchor('rh/programa_trainee', 'Entrar', 'class="btn btn-primary btn-block"'); ?>     
             </p>
             </div>
           </li>     
@@ -72,11 +96,11 @@
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">
-              <h3>Funcionalidade 6</h3>
+              <h3>Desligamento</h3>
               <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
               <p>Pequena descrição da funcinalidadeo</p>
             <p class="text-center">
-              <?php echo anchor('index/sobre_presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?> 
+              <?php echo anchor('rh/desligamento', 'Entrar', 'class="btn btn-primary btn-block"'); ?> 
             </p>
             </div>
           </li>
