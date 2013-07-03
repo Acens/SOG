@@ -17,8 +17,23 @@ class Financeiro extends CI_Controller {
 		$this->load->view('financeiro/orcamento');
 	}
 
-	public function balancete()
+	public function contratos()
+	{
+		$this->load->view('financeiro/contratos');
+	}
+
+	public function propostas()
+	{
+		$this->load->view('financeiro/propostas');
+	}	
+
+	public function balancetes()
 	{
 		$this->load->view('financeiro/balancete');
 	}		
+
+	public function contas_a_pagar()
+	{
+		$this->load->view('financeiro/contas');
+	}
 }
