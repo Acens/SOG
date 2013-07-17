@@ -127,8 +127,69 @@
 
 
 
-  </div> 
+  </div>
+  <div class="modal-footer">
+    <button href="#myModal5" role="button" data-toggle="modal" class="btn btn-primary">Novo Sprint</button>
+  </div>
 </div>
+
+
+
+<!-- janela de novo Sprint -->
+<div id="myModal5" class="modal modal-cadastro hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Novo plano</h3>
+  </div>
+  <div class="modal-body">
+    <?php 
+    if ($this->session->flashdata('cadastrook')){
+      echo '<div class="alert alert-success">'.$this->session->flashdata('cadastrook').'</div>';
+    }
+
+    echo validation_errors('<div class="alert alert-error">','</div>')
+   ?>
+    <?php 
+      echo form_open('projetos/inserir_projeto');
+        ?>
+      <div class="inserir_inputs">
+      <?php 
+        echo form_label('Data de Inicio: ');
+        echo form_input(array('name'=>'pro_nome'),'','autofocus');
+      ?>
+      </div>
+      <div class="inserir_inputs">
+      <?php 
+        echo form_label('Data de Final: ');
+        echo form_input(array('class'=>'date', 'name'=>'pro_inicio'));
+      ?>
+      </div>
+      
+      <div class="inserir_inputs">
+      <?php 
+        echo form_label('Pontos: ');
+        echo form_input(array('class'=>'date', 'name'=>'pro_prazo'));
+      ?>
+      </div>
+
+      <div class="inserir_inputs">
+      <?php 
+        echo form_label('Observações: ');
+        echo form_input(array('type'=>'textarea', 'name'=>'pro_obs'));
+      ?>
+      </div>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+  <?php 
+      echo form_submit(array('class'=>'btn btn-primary','name'=>'cadastrar'),'Salvar');
+      echo form_close();
+     ?> 
+  </div>
+</div> <!-- Fim da janela de novo Sprint --> 
+
+
 
 
 <!-- janela de novo plano -->

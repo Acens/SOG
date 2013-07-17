@@ -102,10 +102,10 @@
       <li class="span4 thumbnail-hover">
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="">
-          <h3>Sprint</h3>
+          <h3>Sprint 1</h3>
          <p>Pequena descrição do sprint</p>
         <p class="text-center">
-          <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
+          <?php echo anchor('scrum/quadro', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
           <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
         </p>
         </div>
@@ -114,10 +114,10 @@
       <li class="span4 thumbnail-hover">
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="">
-          <h3>Sprint</h3>
+          <h3>Sprint 2</h3>
            <p>Pequena descrição do sprint</p>
         <p class="text-center">
-         <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
+         <?php echo anchor('scrum/quadro', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
           <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
         </p>
         </div>
@@ -126,10 +126,10 @@
       <li class="span4 thumbnail-hover">
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="">
-          <h3>Sprint</h3>
+          <h3>Sprint 3</h3>
           <p>Pequena descrição do sprint</p>
         <p class="text-center">
-          <?php echo anchor('index/presidencia', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
+          <?php echo anchor('scrum/quadro', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
           <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
         </p>
         </div>
