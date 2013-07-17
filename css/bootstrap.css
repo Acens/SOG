@@ -6296,15 +6296,21 @@ a.badge:focus {
 .post-it{
  /* width: 100px; 
   height: 100px; 
-  */
+  
   width: 28%;
   height: 22%;
-  box-shadow:gray 2px 2px 3px;
   margin: 10px 9.3px;
+  */
+  box-shadow:gray 2px 2px 3px;
   position: relative;
   float: left;
   color:white;
   font-family: Amerika Sans;
+
+  height:13%;
+  margin:10px 12.3px;
+  position:relative;
+  width:18%;
 }
 
 .post-it-mini{
@@ -6314,12 +6320,17 @@ a.badge:focus {
   box-shadow:gray 1px 1px 3px !important;
 }
 
-.post-fundo{
+.post-fundo{/*
   font-size:100px;
   left:15px;
   opacity:0.15;
   position:absolute;
-  top:40px;
+  top:40px;*/
+  font-size:60px;
+  left:13px;
+  opacity:0.15;
+  position:absolute;
+  top:19px;
 }
 
 .opcao_box{
@@ -6703,3 +6714,23 @@ background-image: -webkit-gradient(
   color-stop(0.74, rgb(217,178,78))
 );
 }
+
+
+.post-amarelo{
+  background-image: linear-gradient(bottom, rgb(191,194,24) 14%, rgb(240,245,84) 85%);
+background-image: -o-linear-gradient(bottom, rgb(191,194,24) 14%, rgb(240,245,84) 85%);
+background-image: -moz-linear-gradient(bottom, rgb(191,194,24) 14%, rgb(240,245,84) 85%);
+background-image: -webkit-linear-gradient(bottom, rgb(191,194,24) 14%, rgb(240,245,84) 85%);
+background-image: -ms-linear-gradient(bottom, rgb(191,194,24) 14%, rgb(240,245,84) 85%);
+
+background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0.14, rgb(191,194,24)),
+  color-stop(0.85, rgb(240,245,84))
+);
+}
+
+
+
