@@ -6341,6 +6341,17 @@ a.badge:focus {
   margin:10px;
   position:relative;
 }  
+
+.escolher-post{
+  width: 20%;
+  height:30px;
+  float:left;
+  line-height:25px;
+  margin:5px 5px;
+  position:relative;
+
+}
+
 .scrum-all{
   height:435px;
 }
@@ -6506,6 +6517,7 @@ background-image: -webkit-gradient(
   height: 100%;
   display: inline-block;
   position: relative;
+  margin: 0px !important;
 }
 
 .scrum-box{
@@ -6520,6 +6532,15 @@ background-image: -webkit-gradient(
   border-left: 1px dashed gray;
   border-right: 1px dashed gray;
 }
+
+.burndown{
+  background:  url('../img/burndown.png');
+  width: 600px;
+  height: 422px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 
 .scrum_top{
   display: inline-block;

@@ -27,7 +27,13 @@ class Scrum extends CI_Controller {
 
 	public function quadro()
 	{
-		$this->load->view('scrum/quadro');
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			'projetos' => $this->projetos_model->get_all()->result(),
+			'meus_projetos' => $this->membproj_model->procurar_meus_projetos(),
+			);
+
+		$this->load->view('scrum/quadro',$dados);
 	}
 
 }

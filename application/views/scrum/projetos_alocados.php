@@ -164,7 +164,7 @@
         echo form_input(array('name'=>'pro_nome'),'','autofocus');
       ?>
       </div>
-     <!-- 
+      
       <div class="inserir_inputs">
         <?php 
           $opcoes_categoria = array(
@@ -176,7 +176,7 @@
           echo form_dropdown('pro_'.$nome_categoria, $opcoes_categoria, 'interno');
         ?>
       </div>
-      -->
+     
       <div class="inserir_inputs">
       <?php 
         echo form_label('Data de Inicio*: ');
@@ -211,7 +211,7 @@
         echo form_input(array('class'=>'span5', 'name'=>'desenvolvedor'));
       ?>
       </div>
-      
+   <!--   
       <div class="inserir_inputs">
         <?php
             $opcoes_categoria = array(
@@ -229,7 +229,7 @@
         ?>
       </div>
       
-
+-->
 
 
 
