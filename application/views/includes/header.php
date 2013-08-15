@@ -15,6 +15,9 @@
   <link href="<?php echo base_url(); ?>/css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="<?php echo base_url(); ?>/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
   <link href="<?php echo base_url(); ?>/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo base_url(); ?>/css/datepicker.css" rel="stylesheet" media="screen" type="text/css"  />
+  <link href="<?php echo base_url(); ?>/css/datepicker_novo.css" rel="stylesheet" media="screen" type="text/css"  />
+
   <!-- Bootstrap CSS fixes for IE6 -->
   <!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.io/cdn/css/bootstrap-ie6.min.css"><![endif]-->
   <!-- Bootstrap Image Gallery styles -->

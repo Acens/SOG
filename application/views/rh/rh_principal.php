@@ -9,7 +9,18 @@
 </div>
 
 <div class="container">
-      <ul class="thumbnails text-center" >          
+      <ul class="thumbnails text-center" >
+          <li class="span3 thumbnail-hover">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x200" alt="">
+              <h3>Presença</h3>
+              <img src="<?php echo base_url(); ?>/img/logo-icon.png" class="img-circle" />
+              <p>Veja as presenças dos membros</p>
+            <p class="text-center">
+              <?php echo anchor('rh/presenca', 'Entrar', 'class="btn btn-primary  btn-block"'); ?>   
+            </p>
+            </div>
+          </li>            
           <li class="span3 thumbnail-hover">
             <div class="thumbnail">
               <img data-src="holder.js/300x200" alt="">

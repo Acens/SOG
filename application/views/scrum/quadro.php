@@ -90,7 +90,7 @@
 
 		<div id="div-popover" class="hide" style="width:800px;">
 		   	<?php 
-		      echo form_open('projetos/inserir_projeto');
+		      echo form_open('#');
 		      echo form_label('Titulo do Post-it: ');
 		      echo form_input(array('name'=>'postit_titulo'),'','autofocus');
 		      echo form_label('Prioridade: ');

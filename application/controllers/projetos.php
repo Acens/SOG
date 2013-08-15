@@ -65,13 +65,7 @@ class Projetos extends CI_Controller {
 			//echo '<pre>'; 
 			//echo $id_po[0]['id'];
 			//print_r($id_po);
-/*			$dados2 = array(
-				'mp_chave_pro' => $id_projeto[0]['id'], 
-				'mp_chave_membro' => $id_po[0]['id'],
-				'mp_cargo' => 'P.O.',
-				);
-			$this->membproj_model->insert($dados2);
-*/	
+
 			
 			$dados2 = array(
 				'mp_chave_pro' => $id_projeto[0]['id'], 

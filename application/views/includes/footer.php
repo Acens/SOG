@@ -8,6 +8,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>/js/bootstrap.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/js/datepicker.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/js/datepicker_novo.js"></script>
 
 <script type="text/javascript">
      cont=0;
@@ -42,7 +44,38 @@
          $('#div-modal').modal();
       });
 
+      $('.escolher-post').button();
 
+      //calendario
+      var data = new Date();
+      var day = data.getDate();
+      var month = data.getMonth()+1;
+      var year = data.getFullYear();
+      var dat = day + '/' + month + '/' + year;
+    //  $(".calendar").text(dat);
+
+      $('.calendar').DatePicker({
+        flat: true,
+        format:'d/m/Y',
+        date: dat,
+        current: dat,
+        calendars: 1,
+        starts: 1
+      });
+
+      $('.calendar_presenca').DatePickerNovo({
+        flat: true,
+        format:'d/m/Y',
+        date: dat,
+        current: dat,
+        calendars: 1,
+        starts: 1
+      });
+      
+
+
+
+      //termina calendario
 
 	$(function ()  
 	{ $("#infoCompeten, #infoQualific").popover({trigger: 'hover'});  

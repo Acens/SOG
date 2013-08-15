@@ -1,0 +1,223 @@
+div.datepicker2 {
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	/*width: 196px;*/
+	/*height: 147px;*/
+	width: 100% !important;
+	height: 100% !important;
+	position: absolute;
+	cursor: default;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.datepickerContainer2 {
+	background: lightgray;/*#121212;*/
+	position: absolute;
+	/*top: 30px;
+	left: 30px;*/
+	width: 96% !important;
+	height: 98% !important;
+	padding: 1% 2%;
+	border-radius: 10px;
+}
+.datepickerBorderT2 {
+	position: absolute;
+	left: 10px;
+	top: 0;
+	right: 10px;
+	height: 10px;
+	background: url(../images/datepicker_t.png);
+}
+.datepickerBorderB2 {
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	right: 10px;
+	height: 10px;
+	background: url(../images/datepicker_b.png);
+}
+.datepickerBorderL2 {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	top: 10px;
+	width: 10px;
+	background: url(../images/datepicker_l.png);
+}
+.datepickerBorderR2 {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	top: 10px;
+	width: 10px;
+	background: url(../images/datepicker_r.png);
+}
+.datepickerBorderTL2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: url(../images/datepicker_tl.png);
+}
+.datepickerBorderTR2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: url(../images/datepicker_tr.png);
+}
+.datepickerBorderBL2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: url(../images/datepicker_bl.png);
+}
+.datepickerBorderBR2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: url(../images/datepicker_br.png);
+}
+.datepickerHidden2 {
+	display: none;
+}
+div.datepicker2 table {
+	border-collapse:collapse;
+	width: 100%;
+	height: 100%;
+}
+div.datepicker2 a {
+	color: #eee;
+	text-decoration: none;
+	cursor: default;
+	outline: none;
+}
+div.datepicker2 table td {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	width: 12%;
+	border: 1px solid;
+}
+div.datepicker2 th {
+	text-align: center;
+	color: #999;
+	font-weight: normal;
+	border: 1px solid black;
+}
+div.datepicker2 tbody th {
+	text-align: left;
+	border: 1px solid black;
+	width: 12%;
+}
+div.datepicker2 tbody a {
+	display: block;
+}
+.datepickerDays2 a {
+	width: 20px;
+	line-height: 16px;
+	height: 16px;
+	padding-right: 2px;
+}
+.datepickerYears2 a,
+.datepickerMonths2 a{
+	width: 44px;
+	line-height: 36px;
+	height: 36px;
+	text-align: center;
+}
+td.datepickerNotInMonth2 a {
+	color: #666;
+}
+tbody.datepickerDays2 td.datepickerSelected2{
+	background: #136A9F;
+}
+tbody.datepickerDays2 td.datepickerNotInMonth2.datepickerSelected2 {
+	background: #17384d;
+}
+tbody.datepickerYears2 td.datepickerSelected2,
+tbody.datepickerMonths2 td.datepickerSelected2{
+	background: #17384d;
+}
+div.datepicker2 a:hover,
+div.datepicker2 a:hover {
+	color: #88c5eb;
+}
+div.datepicker2 td.datepickerNotInMonth2 a:hover {
+	color: #999;
+}
+div.datepicker2 tbody th {
+	text-align: left;
+}
+.datepickerSpace2 div {
+	width: 20px;
+}
+
+.datepickerMonth2{
+	background-color: #0A2E57;
+	border-radius: 5px;
+}
+.datepickerGoNext2 a,
+.datepickerGoPrev2 a,
+.datepickerMonth2 a {
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+}
+.datepickerGoNext2 a {
+	float: right;
+	width: 20px;
+}
+.datepickerGoPrev2 a {
+	float: left;
+	width: 20px;
+}
+table.datepickerViewDays2 tbody.datepickerMonths2,
+table.datepickerViewDays2 tbody.datepickerYears2 {
+	display: none;
+}
+table.datepickerViewMonths2 tbody.datepickerDays2,
+table.datepickerViewMonths2 tbody.datepickerYears2,
+table.datepickerViewMonths2 tr.datepickerDoW2 {
+	display: none;
+}
+table.datepickerViewYears2 tbody.datepickerDays2,
+table.datepickerViewYears2 tbody.datepickerMonths2,
+table.datepickerViewYears2 tr.datepickerDoW2 {
+	display: none;
+}
+td.datepickerDisabled2 a,
+td.datepickerDisabled2.datepickerNotInMonth2 a{
+	color: #333;
+}
+td.datepickerDisabled2 a:hover {
+	color: #333;
+}
+td.datepickerSpecial2 a {
+	background: #700;
+}
+td.datepickerSpecial2.datepickerSelected2 a {
+	background: #a00;
+}
+
+.teste{
+	border: 1px solid red;
+	margin-top: -19px;
+}
+
+.teste_baixo{
+	border: 1px solid green;
+}
+/*
+.datepickerDays2 tr td{
+	background-color: gray;
+	border-radius: 10px;
+}*/

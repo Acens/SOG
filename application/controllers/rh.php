@@ -30,6 +30,11 @@ class Rh extends CI_Controller {
 		$this->load->view('rh/membros',$dados);
 	}
 
+
+	public function presenca(){
+		$this->load->view('rh/presenca');
+	}
+
 	public function atividades(){
 		$this->load->view('rh/atividades');
 	}
@@ -87,6 +92,7 @@ class Rh extends CI_Controller {
 			);
 		$this->load->view('rh/mostrar',$dados);
 	}
+
 
 
 
