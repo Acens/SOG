@@ -13,13 +13,15 @@ div.datepicker2 {
 	display: none;
 }
 .datepickerContainer2 {
-	background: lightgray;/*#121212;*/
+	/*background: lightgray;*//*#121212;*/
 	position: absolute;
 	/*top: 30px;
 	left: 30px;*/
 	width: 96% !important;
 	height: 98% !important;
 	padding: 1% 2%;
+	/*box-shadow:  0px 0px 3px;*/
+	color: black;
 	border-radius: 10px;
 }
 .datepickerBorderT2 {
@@ -104,18 +106,18 @@ div.datepicker2 table td {
 	text-align: left;
 	padding: 0;
 	margin: 0;
-	width: 12%;
-	border: 1px solid;
+	width: 12.7%;
+	/*border-left: 1px solid #0A2E57;*/
 }
 div.datepicker2 th {
 	text-align: center;
-	color: #999;
+	color: black;
 	font-weight: normal;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
 div.datepicker2 tbody th {
 	text-align: left;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	width: 12%;
 }
 div.datepicker2 tbody a {
@@ -138,7 +140,7 @@ td.datepickerNotInMonth2 a {
 	color: #666;
 }
 tbody.datepickerDays2 td.datepickerSelected2{
-	background: #136A9F;
+	/*background: #136A9F;*/
 }
 tbody.datepickerDays2 td.datepickerNotInMonth2.datepickerSelected2 {
 	background: #17384d;
@@ -163,7 +165,7 @@ div.datepicker2 tbody th {
 
 .datepickerMonth2{
 	background-color: #0A2E57;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 .datepickerGoNext2 a,
 .datepickerGoPrev2 a,
@@ -175,10 +177,12 @@ div.datepicker2 tbody th {
 .datepickerGoNext2 a {
 	float: right;
 	width: 20px;
+	color: #0A2E57 !important;
 }
 .datepickerGoPrev2 a {
 	float: left;
 	width: 20px;
+	color: #0A2E57 !important;
 }
 table.datepickerViewDays2 tbody.datepickerMonths2,
 table.datepickerViewDays2 tbody.datepickerYears2 {
@@ -209,15 +213,54 @@ td.datepickerSpecial2.datepickerSelected2 a {
 }
 
 .teste{
-	border: 1px solid red;
-	margin-top: -19px;
+/*	border-bottom: 1px solid black;*/
+	background-color: #114d92 !important;
+	color: #EEEEEE;
+	margin-top: -22px;
+}
+
+.datepickerNotInMonth2 .teste{
+	background-color: #789cc6 !important;
+	color: #EEEEEE;
+	margin-top: -22px;
+}
+
+.datepickerWeek2 .teste{
+	background-color: #0A2E57 !important;
+	color: #EEEEEE;
+	margin-top: -22px;
 }
 
 .teste_baixo{
 	border: 1px solid green;
 }
-/*
-.datepickerDays2 tr td{
-	background-color: gray;
-	border-radius: 10px;
-}*/
+
+.datepicker2 tr{/*
+	border: 1px solid black;
+*/}
+
+.semana{
+	background-color: #0A2E57 !important;
+	color: #EEEEEE !important;
+}
+
+.datepickerDoW2{
+	margin: 10px;
+}
+
+.espaco{
+	height: 10px;
+}
+
+.sem{
+	border: 0px solid !important;
+}
+
+.gray{
+	background-color: lightgray;
+}
+
+.grande{
+  font-size:17px;
+  height:30px !important;
+}

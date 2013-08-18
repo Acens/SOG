@@ -8,15 +8,24 @@
   <h1>Registro de Atividades</h1>
   <p>Registre aqui todas as suas atividades</p> 
 </div>
+
 <div class="container">
 
 	<?php 
-	  echo form_open('#');
+	  echo form_open('atividades/inserir_atividade');
 	  ?>
 	  <div class="incluir-all">
 		  <?php
 	//	  echo form_label('Digite toda a sua atividade','',array('class' => 'incluir'));
-		  echo form_textarea(array('class' => 'incluir-textarea','name' => 'atividade'),'','autofocus');
+		  if($atividade==0){
+		  	echo form_textarea(array('class' => 'incluir-textarea','name' => 'atividade'),'','autofocus');
+		  }else{//echo $atividade[0]["atividade"];
+		  	//echo form_textarea(array('class' => 'incluir-textarea','name' => 'atividade'),'echo $atividade[0]["atividade"];','autofocus');
+		  	?>
+		  	<textarea class="incluir-textarea" name="atividade" autofocus> <?php echo $atividade[0]["atividade"]; ?> </textarea>
+
+		  	<?php 
+		  }
 		  ?>
 	  
 	  <?php

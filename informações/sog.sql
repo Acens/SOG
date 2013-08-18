@@ -147,6 +147,31 @@ CREATE TABLE IF NOT EXISTS `postit` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `presenca`
+--
+
+CREATE TABLE IF NOT EXISTS `presenca` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `id_memb` int(255) NOT NULL,
+  `date` date NOT NULL,
+  `atividade` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Extraindo dados da tabela `presenca`
+--
+
+INSERT INTO `presenca` (`id`, `id_memb`, `date`, `atividade`) VALUES
+(3, 1, '2013-08-04', 'Inseirr\r\n'),
+(4, 1, '2013-08-07', 'sdkgjbsdlsd[sf'),
+(5, 1, '2013-08-01', 'sdkgjbsdlsd[sf'),
+(6, 1, '2013-08-12', ' fvxbvlkvslkdv fsdfksblfsd'),
+(7, 1, '2013-08-18', 'lfdjbdlvbkd;blvxbxbv xb\r\nbdfbdb,d \r\nbdghçfd\r\nfb:FG\r\n');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `projetos`
 --
 

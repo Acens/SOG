@@ -6807,7 +6807,8 @@ background-image: -webkit-gradient(
 
 .calendar_presenca{
   width: 100%;
-  height: 400px;
+  height: 500px;
   position: relative;
   float:right;
+  margin-bottom:40px;
 }
