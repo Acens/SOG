@@ -62,6 +62,8 @@ class Index extends CI_Controller {
 
 	public function principal()
 	{
+        $this->login_model->logged();
+        
 		$notificacao = array(
 			'notificacao' => $this->notificacao_model->get_all()->result(),
 			);
@@ -71,54 +73,64 @@ class Index extends CI_Controller {
 	/*Chamada para página de testes*/
 	public function teste()
 	{
+        $this->login_model->logged();
 		$this->load->view('teste');
 	}	
 
 	/*Funções de chamadas para páginas SOBRE*/
 	public function sobre_a_presidencia()
 	{
+        $this->login_model->logged();
 		$this->load->view('presidencia/sobre_presidencia');
 	}
 
 	public function informacoes_gerais()
 	{
+        $this->login_model->logged();
 		$this->load->view('info/info_gerais');
 	}
 	
 	/*Chamada para as diretorias*/
 	public function recursos_humanos()
 	{
+        $this->login_model->logged();
 		$this->load->view('diretorias/recursos_humanos');
 	}
 
 	/*Funções de chamadas para páginas DAS DIRETORIAS*/
 	public function presidencia()
 	{
+        $this->login_model->logged();
 		$this->load->view('presidencia/presidencia_principal');
 	}
 
 	public function financeiro()
 	{
+        $this->login_model->logged();
 		$this->load->view('financeiro/financeiro_principal');
 	}
 
 	public function rh()
 	{
+        $this->login_model->logged();
 		$this->load->view('rh/rh_principal');
 	}
 
 	public function projetos()
 	{
+        $this->login_model->logged();
 		$this->load->view('projetos/projetos_principal');
 	}		
 
 	public function marketing()
 	{
+        $this->login_model->logged();
 		$this->load->view('marketing/marketing_principal');
 	}
 
 	public function trainee()
 	{
+        $this->login_model->logged();
 		$this->load->view('trainee/trainee_principal');
 	}		
 }

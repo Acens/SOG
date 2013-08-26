@@ -7,7 +7,6 @@
 <div class="hero-unit-acens">
   <h1>Meus Projetos</h1>
   <p>Todos os projetos onde fiz parte do desenvolvimento</p>
-  <?php //echo $this->session->userdata('username'); ?>
 </div>
 
 <!-- Botão de novo plano -->
@@ -38,28 +37,45 @@
          ?>
           <tr>
             <td class="text-center"><?php echo $linha->pro_nome;?></td>
-            <td class="text-center"><?php echo$meus_projetos[$cont]['mp_cargo'];?></td>
+            <td class="text-center"><?php echo $meus_projetos[$cont]['mp_cargo'];?></td>
             <td class="text-center"><?php echo $linha->pro_inicio;?></td>
             <td class="text-center"><?php echo $linha->pro_prazo;?></td>
             <?php 
             $data_inicio = explode("/", $linha->pro_inicio);
             $data_final = explode("/", $linha->pro_prazo);
             $tempo_total = (($data_final[2]-$data_inicio[2])*365)+(($data_final[1]-$data_inicio[1])*30)+($data_final[0]+$data_inicio[0]);
+            echo $linha->pro_nome.':'.$tempo_total.'->'.$data_inicio[0].'/'.$data_inicio[1].'/'.$data_inicio[2].'//'.$data_final[0].'/'.$data_final[1].'/'.$data_final[2].'///' ;
             $data_hj=date("d/m/Y");
             $data_atual = explode("/", $data_hj);
             $tempo_hj = (($data_atual[2]-$data_inicio[2])*365)+(($data_atual[1]-$data_inicio[1])*30)+($data_atual[0]+$data_inicio[0]);
+            echo $tempo_hj;
             $percentual = (($tempo_hj*100)/$tempo_total);
              ?>
             
             <?php if($percentual<100){ ?>
-            <td class="progress progress-striped"><div class="bar" style="width:<?php echo $percentual;?>%; border-radius:10px;"></div></td>
+            <td class="progress progress-striped"><div class="bar" style="width:<?php echo $percentual;?>%; height:80%; border-radius:10px;"></div></td>
             <?php } elseif($percentual==100){ ?>
-            <td class="progress progress-striped progress-warning"><div class="bar" style="width:100%; border-radius:10px;"></div></td>
+            <td class="progress progress-striped progress-warning"><div class="bar" style="width:100%; height:80%; border-radius:10px;"></div></td>
             <?php }else{ ?>
-            <td class="progress progress-danger progress-striped" ><div class="bar" style="width: 100%; border-radius:10px;"></div></td>
+            <td class="progress progress-danger progress-striped" ><div class="bar" style="width: 100%; height:80%; border-radius:10px;"></div></td>
             <?php } ?>
+
             <td class="text-center">
-                <a href="#myModal4" role="button" data-toggle="modal" class="btn btn-info">Sprints</a>
+                <?php 
+
+                echo form_open('scrum/sprint');
+                ?>
+                <input type='hidden' name='sprint_chave_pro' value='<?php echo $meus_projetos[$cont]["mp_chave_pro"];?>'>
+                <input type='hidden' name='nome' value='<?php echo $linha->pro_nome;?>'>
+                <input type='hidden' name='percentual' value='<?php echo $percentual;?>'>
+                <?php
+                echo form_submit(array('class'=>'btn btn-primary','name'=>'sprints'),'Sprints');
+                echo form_close();
+
+
+
+              //  echo anchor('scrum/quadro& id=$meus_projetos[$cont]["mp_chave_pro"]', 'Entrar', 'class="btn btn-info"'); 
+                ?>
             </td>
             <td class="text-center">
                 <a href="#myModal3" role="button" data-toggle="modal"><i class="icon-pencil"></i></a>
@@ -103,8 +119,8 @@
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="">
           <h3>Sprint 1</h3>
-         <p>Pequena descrição do sprint</p>
-        <p class="text-center">
+          <p>Pequena descrição do sprint</p>
+          <p class="text-center">
           <?php echo anchor('scrum/quadro', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
           <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
         </p>
@@ -115,8 +131,8 @@
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="">
           <h3>Sprint 2</h3>
-           <p>Pequena descrição do sprint</p>
-        <p class="text-center">
+          <p>Pequena descrição do sprint</p>
+          <p class="text-center">
          <?php echo anchor('scrum/quadro', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
           <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
         </p>
@@ -128,7 +144,7 @@
           <img data-src="holder.js/300x200" alt="">
           <h3>Sprint 3</h3>
           <p>Pequena descrição do sprint</p>
-        <p class="text-center">
+          <p class="text-center">
           <?php echo anchor('scrum/quadro', 'Entrar', 'class="btn btn-primary btn-block"'); ?><!-- Se ainda nao foi terminada -->  
           <!--<?php echo anchor('index/sobre_a_presidencia', 'Sobre o cargo', 'class="btn"'); ?><! Se ja foi terminada -->
         </p>
@@ -138,6 +154,11 @@
 
 
   </div> 
+
+  <div class="modal-footer">
+    <button href="#myModal5" role="button" data-toggle="modal" class="btn btn-primary">Novo Sprint</button>
+  </div>
+
 </div>
 
 

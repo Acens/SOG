@@ -10,61 +10,96 @@ class Rh extends CI_Controller {
 		$this->load->model('login_model');
         $this->login_model->logged();
 
-        $notificacao = array(
-			'notificacao' => $this->notificacao_model->get_all()->result(),
-			);
-
 
 	}
 
 	public function index()
 	{
-		$this->load->view('rh/rh_principal');
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/rh_principal',$dados);
 	}
 
 	public function membros()
 	{
 		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
 			'membros' => $this->membros_model->get_all()->result(),
 			);
 		$this->load->view('rh/membros',$dados);
 	}
 
 
-	public function presenca(){
-		$this->load->view('rh/presenca');
+	public function presenca()
+	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/presenca',$dados);
 	}
 
-	public function atividades(){
-		$this->load->view('rh/atividades');
+	public function atividades()
+	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/atividades',$dados);
 	}
 
-	public function documentos(){
-		$this->load->view('rh/documentos');
+	public function documentos()
+	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/documentos',$dados);
 	}
 
-	public function processo_seletivo(){
-		$this->load->view('rh/processo_seletivo');
+	public function processo_seletivo()
+	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/processo_seletivo',$dados);
 	}
 
-	public function termo_de_volutariado(){
-		$this->load->view('rh/termo');
+	public function termo_de_volutariado()
+	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/termo',$dados);
 	}
 
-	public function treinamentos(){
-		$this->load->view('rh/treinamentos');
+	public function treinamentos()
+	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/treinamentos',$dados);
 	}
 
-	public function programa_trainee(){
-		$this->load->view('rh/programa_trainee');
+	public function programa_trainee()
+	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/programa_trainee',$dados);
 	}
 
-	public function desligamento(){
-		$this->load->view('rh/desligamento');
+	public function desligamento()
+	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
+		$this->load->view('rh/desligamento',$dados);
 	}
 
 	public function inserir_membros()
 	{
+		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
+			);
 		
 		$this->form_validation->set_rules('nome','NOME','required|is_unique[membros.nome]');
 		$this->form_validation->set_rules('senha','SENHA','required|min_length[5]');
@@ -79,15 +114,17 @@ class Rh extends CI_Controller {
 		$this->form_validation->set_rules('cargo','CARGO','required');
 
 		if($this->form_validation->run()==TRUE){
-			$dados = elements(array('nome','senha','nascimento','matricula','email_pessoal','email_empresarial','telefone1','telefone2','bairro','rua','numero','cep','ingresso','cargo','skype','github'),$this->input->post());
-			$dados['senha'] = md5($dados['senha']);
-			$this->membros_model->insert($dados);
+			$inseir = elements(array('nome','senha','nascimento','matricula','email_pessoal','email_empresarial','telefone1','telefone2','bairro','rua','numero','cep','ingresso','cargo','skype','github'),$this->input->post());
+			$inserir['senha'] = md5($inserir['senha']);
+			$this->membros_model->insert($inserir);
 		}
-		$this->load->view('rh/membros');
+		$this->load->view('rh/membros',$dados);
 	}
 
-	public function mostrar_membros(){
+	public function mostrar_membros()
+	{
 		$dados = array(
+			'notificacao' => $this->notificacao_model->get_all()->result(),
 			'membros' => $this->membros_model->get_all()->result(),
 			);
 		$this->load->view('rh/mostrar',$dados);

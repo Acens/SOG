@@ -112,6 +112,12 @@
         ?>
       </div>
       <div class="inserir_inputs">
+        <?php 
+        echo form_label('Username*: ');
+        echo form_input(array('name'=>'username'),'','autofocus');
+        ?>
+      </div>
+      <div class="inserir_inputs">
       <?php 
         echo form_label('Senha*: ');
         echo form_password(array('name'=>'senha'));

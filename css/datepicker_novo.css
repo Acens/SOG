@@ -264,3 +264,9 @@ td.datepickerSpecial2.datepickerSelected2 a {
   font-size:17px;
   height:30px !important;
 }
+
+.month_year{
+	background-color: #114d92 !important;
+	color: #EEEEEE;
+	border-radius: 15px;
+}

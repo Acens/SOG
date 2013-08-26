@@ -46,11 +46,11 @@
            ?>
           
           <?php if($percentual<100){ ?>
-          <td class="progress progress-striped"><div class="bar" style="width:<?php echo $percentual;?>%; border-radius:10px;"></div></td>
+          <td class="progress progress-striped"><div class="bar" style="width:<?php echo $percentual;?>%; height:80%; border-radius:10px;"></div></td>
           <?php } elseif($percentual==100){ ?>
-          <td class="progress progress-striped progress-warning"><div class="bar" style="width:100%; border-radius:10px;"></div></td>
+          <td class="progress progress-striped progress-warning"><div class="bar" style="width:100%; height:80%; border-radius:10px;"></div></td>
           <?php }else{ ?>
-          <td class="progress progress-danger progress-striped" ><div class="bar" style="width: 100%; border-radius:10px;"></div></td>
+          <td class="progress progress-danger progress-striped" ><div class="bar" style="width: 100%; height:80%; border-radius:10px;"></div></td>
           <?php } ?>
           <td class="text-center">
               <a href="#myModal4" role="button" data-toggle="modal" class="btn btn-info">Sprints</a>
@@ -68,7 +68,7 @@
 
 <!-- chamada a janela modal de novo e telas de confirmação -->
 <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
+    <div class="modal-header">height:80%;
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Confirmar deleção de plano</h3>
     </div>

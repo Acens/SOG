@@ -38,12 +38,11 @@ class Atividades extends CI_Controller {
 		$this->form_validation->set_rules('atividade','ATIVIDADE','required');
 		if($this->form_validation->run()==TRUE){
 			$atividade = $this->input->post();
-			$array = array(
+			$inserir = array(
 				'id_memb' => $this->session->userdata('id_usuario'),
 				'date' => date("y-m-d"),
 				'atividade' => $atividade['atividade'], 
 				);
-			$inserir = elements(array('id_memb','date','atividade'),$array);
 			$banco = $this->atividades_model->checar();
 			if($banco==0){
 				$this->atividades_model->insert($inserir);	

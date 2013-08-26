@@ -6311,10 +6311,12 @@ a.badge:focus {
   color:white;
   font-family: Amerika Sans;
 
-  height:13%;
+  height:18%;
+/*  height:13%;*/
   margin:10px 12.3px;
   position:relative;
-  width:18%;
+/*  width:18%;*/
+  width:26%;
 }
 
 .post-it-mini{
@@ -6329,12 +6331,17 @@ a.badge:focus {
   left:15px;
   opacity:0.15;
   position:absolute;
-  top:40px;*/
+  top:40px;*//*
   font-size:60px;
   left:13px;
   opacity:0.15;
   position:absolute;
-  top:19px;
+  top:19px;*/
+  font-size:94px;
+  left:15px;
+  opacity:0.25;
+  position:absolute;
+  top:31px;
 }
 
 .opcao_box{
@@ -6353,7 +6360,7 @@ a.badge:focus {
   line-height:25px;
   margin:5px 5px;
   position:relative;
-
+  color: black;
 }
 
 .scrum-all{

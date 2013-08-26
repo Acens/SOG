@@ -30,6 +30,18 @@ class Projetos_model extends CI_Model{
 			//print_r($imprimir);
         }
 	}
+
+	public function id_projetos($id){
+		$this->db->where('id', $id['id']);
+        $dados = $this->db->select('pro_nome');
+        $query = $this->db->get('projetos'); 
+        if ($query->num_rows >= 1) { 
+            return  $query->result_array(); // RETORNA VERDADEIRO
+        	//$imprimir = $query->result_array();
+        	//echo '<pre>'; 
+			//print_r($imprimir);
+        }
+	}
 /*
 	public function procurar_projeto($projeto){
 		$this->db->where('pro_nome', $projeto['pro_nome']);
