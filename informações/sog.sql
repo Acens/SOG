@@ -48,11 +48,7 @@ INSERT INTO `membproj` (`mp_chave_pro`, `mp_chave_membro`, `mp_cargo`) VALUES
 (3, 12, 'Desenvolvedor'),
 (4, 2, 'P.O.'),
 (4, 1, 'Scrum Master'),
-(4, 7, 'Desenvolvedor'),
-(5, 7, 'P.O.'),
-(5, 10, 'Scrum Master'),
-(5, 1, 'Desenvolvedor'),
-(5, 2, 'Desenvolvedor');
+(4, 7, 'Desenvolvedor');
 
 -- --------------------------------------------------------
 
@@ -141,22 +137,12 @@ CREATE TABLE IF NOT EXISTS `postit` (
   `postit_chave_sprint` int(255) NOT NULL,
   `postit_titulo` varchar(255) NOT NULL,
   `postit_prioridade` varchar(255) NOT NULL,
-  `postit_cor` varchar(255) NOT NULL,
   `postit_horas` int(255) NOT NULL,
   `postit_conteudo` varchar(255) NOT NULL,
   `postit_chave_membro` varchar(255) NOT NULL,
   `postit_status` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
-
---
--- Extraindo dados da tabela `postit`
---
-
-INSERT INTO `postit` (`id`, `postit_chave_pro`, `postit_chave_sprint`, `postit_titulo`, `postit_prioridade`, `postit_cor`, `postit_horas`, `postit_conteudo`, `postit_chave_membro`, `postit_status`) VALUES
-(1, 4, 1, 'Matar Alisson', 'A', 'red', 8, 'Deve matar o Alisson até dia 25/08 ', '', 'fazer'),
-(6, 4, 1, 'Matar Alisson', 'A', 'red', 8, 'Deve matar o Alisson até dia 25/08 ', '', 'fazer'),
-(7, 5, 1, 'Atualizar Regiões', 'A', 'red', 0, 'Fazer uma pagina de cadastro de cidades e estados para o portal administrativo, fazendo com que os dados apareçam no combobox da página inicial.', '', 'fazer');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -170,7 +156,7 @@ CREATE TABLE IF NOT EXISTS `presenca` (
   `date` date NOT NULL,
   `atividade` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Extraindo dados da tabela `presenca`
@@ -181,10 +167,7 @@ INSERT INTO `presenca` (`id`, `id_memb`, `date`, `atividade`) VALUES
 (4, 1, '2013-08-07', 'sdkgjbsdlsd[sf'),
 (5, 1, '2013-08-01', 'sdkgjbsdlsd[sf'),
 (6, 1, '2013-08-12', ' fvxbvlkvslkdv fsdfksblfsd'),
-(7, 1, '2013-08-18', 'lfdjbdlvbkd;blvxbxbv xb\r\nbdfbdb,d \r\nbdghçfd\r\nfb:FG\r\n'),
-(8, 1, '2013-08-19', 'Cheguei na acens 8:00 e fiquei trabalhando no S.O.G. \r\nVim para a aula de ED2 \r\ntestando \r\nvdkfkkvnkldvfd'),
-(9, 1, '2013-08-21', 'Terminar o Scrum online'),
-(10, 1, '2013-08-29', 'vjkbsvkxvcxvxcvxc\r\n');
+(7, 1, '2013-08-18', 'lfdjbdlvbkd;blvxbxbv xb\r\nbdfbdb,d \r\nbdghçfd\r\nfb:FG\r\n');
 
 -- --------------------------------------------------------
 
@@ -201,7 +184,7 @@ CREATE TABLE IF NOT EXISTS `projetos` (
   `pro_prazo` varchar(255) NOT NULL,
   `pro_obs` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Extraindo dados da tabela `projetos`
@@ -211,8 +194,7 @@ INSERT INTO `projetos` (`id`, `pro_nome`, `pro_categoria`, `pro_inicio`, `pro_fi
 (1, 'SOG', 'Interno', '10/06/2013', '', '20/08/2013', 'Sistema de Gestão'),
 (2, 'Plastec', '12', '01/01/2013', '', '20/06/2013', 'sdashdasgd'),
 (3, 'Ecos', '12', '20/12/2012', '', '12/05/2013', '12'),
-(4, 'Teste4', '12', '20/12/2012', '', '20/06/2014', 'wewrwv'),
-(5, 'Localizador Cultural', 'externo', '19/08/2013', '', '19/11/2013', '');
+(4, 'Teste4', '12', '20/12/2012', '', '20/06/2014', 'wewrwv');
 
 -- --------------------------------------------------------
 
@@ -228,15 +210,6 @@ CREATE TABLE IF NOT EXISTS `sprint` (
   `sprint_pontos` int(255) NOT NULL,
   `sprint_obs` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `sprint`
---
-
-INSERT INTO `sprint` (`sprint_chave_pro`, `sprint_numero`, `sprint_inicio`, `sprint_final`, `sprint_pontos`, `sprint_obs`) VALUES
-(4, 1, '20/08/2013', '28/08/2013', 0, 'sa.jdas]das'),
-(4, 2, '24/08/2013', '31/08/2013', 0, 'lsdfbsdlfs\r\nsdfnsdf\r\nsfd'),
-(5, 1, '21/08/2013', '23/08/2013', 0, '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
